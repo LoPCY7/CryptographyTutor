@@ -1,0 +1,16 @@
+﻿<Window x:Class="CryptographyTutor.Intro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptographyTutor"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Intro" Height="226.05" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="Hello, please enter your name:" Height="34" Margin="10,10,0,0" VerticalAlignment="Top" Width="247" HorizontalAlignment="Left"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="38,58,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="191"/>
+        <Button x:Name="btnConfirmName" Content="Proceed" HorizontalAlignment="Left" Height="41" Margin="77,130,0,0" VerticalAlignment="Top" Width="160" Click="btnConfirmName_Click"/>
+
+    </Grid>
+</Window>

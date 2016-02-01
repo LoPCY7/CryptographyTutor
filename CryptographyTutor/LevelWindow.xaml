@@ -1,0 +1,14 @@
+﻿<Window x:Class="CryptographyTutor.LevelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptographyTutor"
+        mc:Ignorable="d"
+        Title="LevelWindow" Height="321.849" Width="372.269">
+    <Grid>
+        <Button x:Name="button" Content="Done" HorizontalAlignment="Left" Height="37" Margin="106,222,0,0" VerticalAlignment="Top" Width="151" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="55" Margin="42,18,0,0" TextWrapping="Wrap" Text="Question" VerticalAlignment="Top" Width="286"/>
+
+    </Grid>
+</Window>
