@@ -26,4 +26,9 @@ C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\Cryptogra
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Intro.baml
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\BruteForce.g.cs
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\BruteForce.baml
-C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\App.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\TutorialWindow.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\TutorialWindow.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\TestCBC.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\TestCBC.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\GameTest.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\GameTest.baml

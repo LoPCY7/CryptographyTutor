@@ -28,17 +28,20 @@ public GameWindow(int gameScore)
             enableLevels();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnLvl1_Click(object sender, RoutedEventArgs e)
         {
+            /*LevelWindow newLevel = new LevelWindow(levelScore);
             this.Close();
-            LevelWindow newLevel = new LevelWindow(levelScore);
+            newLevel.Show();*/
+            GameTest newLevel = new GameTest();
+            this.Close();
             newLevel.Show();
         }
 
         private void enableLevels()
         {
             if (levelScore >= 1)
-                button1.IsEnabled = true;
+                btnLvl2.IsEnabled = true;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptographyTutor"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="AESTest" Height="597.479" Width="575.63">
     <Grid>

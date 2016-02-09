@@ -17,6 +17,7 @@
                 <Button x:Name="btnBruteForce" Content="Brute Force" HorizontalAlignment="Left" Height="41" Margin="192,10,0,0" VerticalAlignment="Top" Width="131" Click="btnBruteForce_Click"/>
             </Grid>
         </GroupBox>
+        <Button x:Name="button2" Content="CBC" HorizontalAlignment="Left" Height="28" Margin="190,281,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click_1"/>
 
     </Grid>
 </Window>

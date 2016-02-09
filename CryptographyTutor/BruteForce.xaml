@@ -39,7 +39,7 @@
                 <CheckBox x:Name="checkBox" Content="Use Dictionary" HorizontalAlignment="Left" Height="16" Margin="199,211,0,0" VerticalAlignment="Top" Width="152"/>
                 <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="121" Margin="184,292,0,0" TextWrapping="Wrap" Text="BruteForcer isn't running" VerticalAlignment="Top" Width="167"/>
                 <Label x:Name="label4" Content="Information:" HorizontalAlignment="Left" Height="25" Margin="184,262,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button x:Name="button3" Content="Run Brute Force" HorizontalAlignment="Left" Height="39" Margin="104,463,0,0" VerticalAlignment="Top" Width="165"/>
+                <Button x:Name="btnRunBruteForce" Content="Run Brute Force" HorizontalAlignment="Left" Height="39" Margin="104,463,0,0" VerticalAlignment="Top" Width="165" Click="btnRunBruteForce_Click"/>
             </Grid>
         </GroupBox>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="39" Margin="131,586,0,0" VerticalAlignment="Top" Width="151" Click="button_Click"/>

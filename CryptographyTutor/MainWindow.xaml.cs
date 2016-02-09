@@ -50,5 +50,12 @@ namespace CryptographyTutor
             this.Hide();
             brForceWindow.Show();
         }
+
+        private void button2_Click_1(object sender, RoutedEventArgs e)
+        {
+            TestCBC testCBC = new TestCBC();
+            this.Hide();
+            testCBC.Show();
+        }
     }
 }

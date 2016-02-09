@@ -29,9 +29,9 @@ namespace CryptographyTutor
         private void button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Congratulations, your answer is correct!");
-            this.Close();
             levelScore = levelScore + 1;
             GameWindow continueGame = new GameWindow(levelScore);
+            this.Close();
             continueGame.Show();
         }
     }

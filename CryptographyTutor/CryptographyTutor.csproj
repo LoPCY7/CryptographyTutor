@@ -58,6 +58,15 @@
     <Compile Include="AESEncryption.xaml.cs">
       <DependentUpon>AESEncryption.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GameTest.xaml.cs">
+      <DependentUpon>GameTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestCBC.xaml.cs">
+      <DependentUpon>TestCBC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialWindow.xaml.cs">
+      <DependentUpon>TutorialWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AESTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,6 +76,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BruteForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,6 +126,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="AESEncryption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestCBC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TutorialWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
