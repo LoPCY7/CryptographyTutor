@@ -6,18 +6,17 @@
         xmlns:local="clr-namespace:CryptographyTutor"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="313.725" Width="525">
     <Grid Background="#FFA8A8A8">
         <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Height="41" Margin="190,224,0,0" VerticalAlignment="Top" Width="131" Click="button1_Click"/>
         <Button x:Name="btnTutor" Content="Tutor" HorizontalAlignment="Left" Height="41" Margin="190,132,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click"/>
-        <Button x:Name="button" Content="Game" HorizontalAlignment="Left" Height="41" Margin="190,178,0,0" VerticalAlignment="Top" Width="131"/>
         <GroupBox x:Name="groupBox" Header="Encryption" HorizontalAlignment="Left" Margin="70,31,0,0" VerticalAlignment="Top" Height="96" Width="402">
             <Grid HorizontalAlignment="Left" Height="61" Margin="28,9,0,0" VerticalAlignment="Top" Width="318">
                 <Button x:Name="btnEncrypt" Content="Encrypt Text" HorizontalAlignment="Left" Height="41" Margin="10,5,0,0" VerticalAlignment="Top" Width="131" Click="button_Click"/>
                 <Button x:Name="btnBruteForce" Content="Brute Force" HorizontalAlignment="Left" Height="41" Margin="192,10,0,0" VerticalAlignment="Top" Width="131" Click="btnBruteForce_Click"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="button2" Content="CBC" HorizontalAlignment="Left" Height="28" Margin="190,281,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click_1"/>
+        <Button x:Name="button2" Content="CBC" HorizontalAlignment="Left" Height="41" Margin="190,178,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click_1"/>
 
     </Grid>
 </Window>

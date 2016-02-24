@@ -10,7 +10,7 @@
     <Grid>
         <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="235,258,0,0" VerticalAlignment="Top" Width="75" Click="btnNext_Click"/>
         <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="115,258,0,0" VerticalAlignment="Top" Width="75" Click="btnBack_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="134" Margin="23,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="391"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="173" Margin="23,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="391"/>
         <Button x:Name="btnQuiz" Content="Go to Quiz" HorizontalAlignment="Left" Height="30" Margin="155,188,0,0" VerticalAlignment="Top" Width="126" Click="btnQuiz_Click"/>
     </Grid>
 </Window>

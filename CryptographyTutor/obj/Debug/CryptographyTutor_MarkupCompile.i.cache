@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\App.xaml
-1128331349
+121697682469
 
-1925797683
+20-1125506333
 13738642453
-AESTest.xaml;AESTest2.xaml;BruteForce.xaml;GameTest.xaml;GameWindow.xaml;Intro.xaml;LevelWindow.xaml;MainWindow.xaml;AESEncryption.xaml;TestCBC.xaml;TutorialWindow.xaml;
+AESTest.xaml;AESTest2.xaml;BruteForce.xaml;GameTest.xaml;GameWindow.xaml;Intro.xaml;LevelWindow.xaml;MainWindow.xaml;AESEncryption.xaml;ResultsPage.xaml;TestCBC.xaml;TutorialWindow.xaml;
 
 True
 

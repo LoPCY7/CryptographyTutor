@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:CryptographyTutor"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="GameWindow" Height="322.101" Width="382.558">
+        Title="GameWindow" Height="360.101" Width="382.558">
     <Grid>
         <Label x:Name="label" Content="Select level:" HorizontalAlignment="Left" Height="29" Margin="10,22,0,0" VerticalAlignment="Top" Width="71"/>
-        <Button x:Name="button2" Content="Exit" HorizontalAlignment="Left" Height="24" Margin="136,253,0,0" VerticalAlignment="Top" Width="93" Click="button2_Click"/>
-        <GroupBox x:Name="groupBox" Header="AES" HorizontalAlignment="Left" Height="84" Margin="10,51,0,0" VerticalAlignment="Top" Width="349">
+        <Button x:Name="button2" Content="Exit" HorizontalAlignment="Left" Height="24" Margin="136,285,0,0" VerticalAlignment="Top" Width="93" Click="button2_Click"/>
+        <GroupBox x:Name="groupBox" Header="Block Ciphers" HorizontalAlignment="Left" Height="84" Margin="10,51,0,0" VerticalAlignment="Top" Width="349">
             <Grid HorizontalAlignment="Left" Height="58" Margin="10,0,0,0" VerticalAlignment="Top" Width="326">
-                <Button x:Name="btnLvl1" Content="Level 1" HorizontalAlignment="Left" Height="31" Margin="1,10,0,0" VerticalAlignment="Top" Width="59" Click="btnLvl1_Click"/>
+                <Button x:Name="btnLvl1" Content="Intro" HorizontalAlignment="Left" Height="31" Margin="1,10,0,0" VerticalAlignment="Top" Width="59" Click="btnLvl1_Click"/>
                 <Button x:Name="btnLvl2" Content="Level 2" HorizontalAlignment="Left" Height="31" Margin="65,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
                 <Button x:Name="btnLvl3" Content="Level 3" HorizontalAlignment="Left" Height="31" Margin="129,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
                 <Button x:Name="btnLvl4" Content="Level 4" HorizontalAlignment="Left" Height="31" Margin="193,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
@@ -21,5 +21,16 @@
         </GroupBox>
         <Label x:Name="lblPlayerName" Content="PlayerName" HorizontalAlignment="Left" Height="24" Margin="10,4,0,0" VerticalAlignment="Top" Width="77" FontSize="8"/>
         <Label x:Name="lblPlayerScore" Content="Score:" HorizontalAlignment="Left" Height="24" Margin="282,3,0,0" VerticalAlignment="Top" Width="77" FontSize="8"/>
+        <Button x:Name="btnMainMenu" Content="Main Menu" HorizontalAlignment="Left" Height="25" Margin="114,223,0,0" VerticalAlignment="Top" Width="133" Click="btnMainMenu_Click" Visibility="Hidden"/>
+        <GroupBox x:Name="groupBox_Copy" Header="AES" HorizontalAlignment="Left" Height="84" Margin="10,140,0,0" VerticalAlignment="Top" Width="349">
+            <Grid HorizontalAlignment="Left" Height="58" Margin="10,0,0,0" VerticalAlignment="Top" Width="326">
+                <Button x:Name="btnLvl6" Content="Level 6" HorizontalAlignment="Left" Height="31" Margin="1,10,0,0" VerticalAlignment="Top" Width="59" Click="btnLvl1_Click" IsEnabled="False"/>
+                <Button x:Name="btnLvl7" Content="Level 7" HorizontalAlignment="Left" Height="31" Margin="65,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
+                <Button x:Name="btnLvl8" Content="Level 8" HorizontalAlignment="Left" Height="31" Margin="129,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
+                <Button x:Name="btnLvl9" Content="Level 9" HorizontalAlignment="Left" Height="31" Margin="193,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
+                <Button x:Name="btnLvl10" Content="Level 10" HorizontalAlignment="Left" Height="31" Margin="257,10,0,0" VerticalAlignment="Top" Width="59" IsEnabled="False"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnPresentations" Content="Presentations" HorizontalAlignment="Left" Height="32" Margin="114,248,0,0" VerticalAlignment="Top" Width="133" Click="btnPresentations_Click" IsEnabled="False"/>
     </Grid>
 </Window>

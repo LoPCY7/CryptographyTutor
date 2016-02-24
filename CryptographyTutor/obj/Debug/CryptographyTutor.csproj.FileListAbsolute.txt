@@ -1,7 +1,6 @@
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\bin\Debug\CryptographyTutor.exe.config
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\bin\Debug\CryptographyTutor.exe
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\bin\Debug\CryptographyTutor.pdb
-c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\CryptographyTutor.csprojResolveAssemblyReference.cache
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\MainWindow.g.cs
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\App.g.cs
 c:\users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\CryptographyTutor_MarkupCompile.cache
@@ -32,3 +31,6 @@ C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\Cryptogra
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\TestCBC.baml
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\GameTest.g.cs
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\GameTest.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\CryptographyTutor.csprojResolveAssemblyReference.cache
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\ResultsPage.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\ResultsPage.baml

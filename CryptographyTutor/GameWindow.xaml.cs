@@ -25,28 +25,51 @@ public GameWindow(int gameScore)
         {
             InitializeComponent();
             levelScore = gameScore;
+            checkPresentations();
             enableLevels();
         }
 
-        private void btnLvl1_Click(object sender, RoutedEventArgs e)
+        private void openLevel (int receivedLevel)
         {
-            /*LevelWindow newLevel = new LevelWindow(levelScore);
-            this.Close();
-            newLevel.Show();*/
-            GameTest newLevel = new GameTest();
+            GameTest newLevel = new GameTest(receivedLevel);
             this.Close();
             newLevel.Show();
         }
 
+        private void btnLvl1_Click(object sender, RoutedEventArgs e)
+        {
+            openLevel(1);
+        }
+
         private void enableLevels()
         {
-            if (levelScore >= 1)
+            if (levelScore > 1)
                 btnLvl2.IsEnabled = true;
+            if (levelScore >= 5)
+                btnLvl5.Visibility = Visibility.Visible;
+        }
+
+        private void checkPresentations()
+        {
+            if (levelScore < 2)
+                btnPresentations.Visibility = Visibility.Hidden;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainMenu = new MainWindow();
+            this.Close();
+            mainMenu.Show();
+        }
+
+        private void btnPresentations_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

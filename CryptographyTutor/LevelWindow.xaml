@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:CryptographyTutor"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="LevelWindow" Height="321.849" Width="372.269">
+        Title="LevelWindow" Height="316.821" Width="372.269">
     <Grid>
-        <Button x:Name="button" Content="Done" HorizontalAlignment="Left" Height="37" Margin="106,222,0,0" VerticalAlignment="Top" Width="151" Click="button_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="55" Margin="42,18,0,0" TextWrapping="Wrap" Text="Question" VerticalAlignment="Top" Width="286"/>
+        <TextBox x:Name="txtQuestion" HorizontalAlignment="Left" Height="55" Margin="42,18,0,0" TextWrapping="Wrap" Text="Question" VerticalAlignment="Top" Width="286"/>
+        <Button x:Name="btnA" Content="Button" HorizontalAlignment="Left" Height="43" Margin="52,112,0,0" VerticalAlignment="Top" Width="100" Click="btnA_Click"/>
+        <Button x:Name="btnB" Content="Button" HorizontalAlignment="Left" Height="44" Margin="205,166,0,0" VerticalAlignment="Top" Width="100" Click="btnB_Click"/>
+        <Button x:Name="btnC" Content="Button" HorizontalAlignment="Left" Height="44" Margin="52,166,0,0" VerticalAlignment="Top" Width="100" Click="btnC_Click"/>
+        <Button x:Name="btnD" Content="Button" HorizontalAlignment="Left" Height="43" Margin="205,112,0,0" VerticalAlignment="Top" Width="100" Click="btnD_Click"/>
+        <Button x:Name="btnNextQuestion" Content="Next" HorizontalAlignment="Left" Height="28" Margin="136,235,0,0" VerticalAlignment="Top" Width="85" IsEnabled="False" Click="btnNextQuestion_Click"/>
 
     </Grid>
 </Window>
