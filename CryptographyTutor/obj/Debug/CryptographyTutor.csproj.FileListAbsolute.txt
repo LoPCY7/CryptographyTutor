@@ -34,3 +34,14 @@ C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\Cryptogra
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\CryptographyTutor.csprojResolveAssemblyReference.cache
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\ResultsPage.g.cs
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\ResultsPage.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\MainWindow2.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\MainWindow2.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\bin\Debug\FirstFloor.ModernUI.xml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\App.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Assets\Styles.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\IntroToBC.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\IntroToBC.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Assets\Theme1.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\FinalAES.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\FinalAES.baml
