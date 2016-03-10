@@ -1,5 +1,4 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +17,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class TutorialWindow : ModernWindow
+    public partial class TutorialWindow : Window
     {
         public TutorialWindow(String playerName)
         {

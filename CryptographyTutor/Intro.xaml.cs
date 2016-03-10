@@ -1,5 +1,4 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,7 +18,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for Intro.xaml
     /// </summary>
-    public partial class Intro : ModernWindow
+    public partial class Intro : Window
     {
         string savePath;
         string folderSavePath;

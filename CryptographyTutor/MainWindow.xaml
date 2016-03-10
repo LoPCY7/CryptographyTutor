@@ -1,13 +1,12 @@
-﻿    <mui:ModernWindow x:Class="CryptographyTutor.MainWindow"
-                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-                  mc:Ignorable="d"
-                  Title="MainWindow"
-                  WindowStartupLocation="CenterScreen"
-                  Style="{StaticResource BlankWindow}" Height="313.725" Width="525">
+﻿<Window x:Class="CryptographyTutor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptographyTutor"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="313.725" Width="525">
     <Grid Background="#FFA8A8A8">
         <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Height="41" Margin="190,224,0,0" VerticalAlignment="Top" Width="131" Click="button1_Click"/>
         <Button x:Name="btnTutor" Content="Tutor" HorizontalAlignment="Left" Height="41" Margin="190,132,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click"/>
@@ -20,4 +19,4 @@
         <Button x:Name="button2" Content="CBC" HorizontalAlignment="Left" Height="41" Margin="190,178,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click_1"/>
 
     </Grid>
-</mui:ModernWindow>
+</Window>

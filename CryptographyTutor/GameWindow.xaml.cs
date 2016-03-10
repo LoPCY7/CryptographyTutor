@@ -1,5 +1,4 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CryptographyTutor
@@ -19,7 +17,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for GameWindow.xaml
     /// </summary>
-    public partial class GameWindow : ModernWindow
+    public partial class GameWindow : Window
     {
         public int levelScore;
 
@@ -57,7 +55,7 @@ public GameWindow(int gameScore)
                 btnPresentations.Visibility = Visibility.Hidden;
         }
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
