@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstFloor.ModernUI.Windows.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for BruteForce.xaml
     /// </summary>
-    public partial class BruteForce : Window
+    public partial class BruteForce : ModernWindow
     {
         private static string password = "p123";
         private static string result;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstFloor.ModernUI.Windows.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace CryptographyTutor
     /// Interaction logic for Window1.xaml
     /// </summary>
     /// 
-    public partial class Window1 : Window
+    public partial class Window1 : ModernWindow
     {
         public enum KeySize { Bits128, Bits192, Bits256 };  // key size, in bits, for construtor
 

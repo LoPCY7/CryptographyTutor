@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstFloor.ModernUI.Windows.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for GameTest.xaml
     /// </summary>
-    public partial class GameTest : Window
+    public partial class GameTest : ModernWindow
     {
         private int page;
         private int gameLevel;
@@ -38,38 +39,38 @@ namespace CryptographyTutor
                 questionsNumber = 4;
                 if (page == 1)
                 {
-                    textBlock.Text = "Welcome to the world of Cryptography!";
+                    /*textBlock.Text = "Welcome to the world of Cryptography!";
                     btnQuiz.Visibility = Visibility.Hidden;
                     btnBack.IsEnabled = false;
-                    btnNext.IsEnabled = true;
+                    btnNext.IsEnabled = true;*/
                 }
                 if (page == 2)
                 {
-                    textBlock.Text = "What is Cryptography?\n\n"
+                   /* textBlock.Text = "What is Cryptography?\n\n"
                         + "First of all, the word Cryptography means hidden writing.\n"
                         + "It's etymology comes from the Greek words kryptos (hidden) and "
                         + "graphein (to write).";
                     btnBack.IsEnabled = true;
-                    btnNext.IsEnabled = true;
+                    btnNext.IsEnabled = true;*/
                 }
                 if (page == 3)
                 {
-                    textBlock.Text = "Cryptography is the algorithmic techniques to "
+                    /*textBlock.Text = "Cryptography is the algorithmic techniques to "
                         + "obscure the meaning of information so theat it is unreadable "
                         + "without special knowledge.\n"
                         + "Or in other words, Encryption of information!\n\n"
                         + "The opposite process is called Decryption.\n"
                         + "Decryption: The algorithm to recover original information "
-                        + "from encrypted text";
+                        + "from encrypted text";*/
                 }
                 if (page ==4)
                 {
-                    textBlock.Text = "You have now completed the first chapter of Cryptography Tutor!\n"
+                   /* textBlock.Text = "You have now completed the first chapter of Cryptography Tutor!\n"
                         + "In order to proceed to Chapter 2: Intro to Block Ciphers, you need to completed a quiz.\n\n"
                         + "You have unlocked: Presentations Menu\n\n"
                         + "Quiz:\n"
                         + "4 questions\n"
-                        + "Requirements to pass: 4/4 correct";
+                        + "Requirements to pass: 4/4 correct";*/
                     btnNext.IsEnabled = false;
                     btnQuiz.Visibility = Visibility.Visible;
                 }
@@ -78,21 +79,21 @@ namespace CryptographyTutor
             {
                 if (page == 1)
                 {
-                    textBlock.Text = "Hello, this tutorial is about AES." +
+                    /*textBlock.Text = "Hello, this tutorial is about AES." +
                         "\nAES stands for Advanced Encryption Standard." +
                         "\nIt was designed by Rijmen-Daemen in Belgium." +
                         "\nIt has 128/192/256 bit keys and 128 bit data.";
                     btnQuiz.Visibility = Visibility.Hidden;
                     btnBack.IsEnabled = false;
-                    btnNext.IsEnabled = true;
+                    btnNext.IsEnabled = true;*/
                 }
                 if (page == 2)
                 {
-                    textBlock.Text = "It uses a data block of 4 columns of 4 bytes is state, " +
+                    /*textBlock.Text = "It uses a data block of 4 columns of 4 bytes is state, " +
                     "and the key is expanded to array of words";
                     btnBack.IsEnabled = true;
                     btnNext.IsEnabled = false;
-                    btnQuiz.Visibility = Visibility.Visible;
+                    btnQuiz.Visibility = Visibility.Visible;*/
                 }
             }
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstFloor.ModernUI.Windows.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -18,7 +19,7 @@ namespace CryptographyTutor
     /// <summary>
     /// Interaction logic for AESTest.xaml
     /// </summary>
-    public partial class AESTest : Window
+    public partial class AESTest : ModernWindow
     {
         public int encryptionMode;
         public string encKey;
