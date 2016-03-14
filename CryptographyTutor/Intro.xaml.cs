@@ -27,11 +27,11 @@ namespace CryptographyTutor
         public Intro()
         {
             InitializeComponent();
-            folderSavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\CryptographyTutor";
-            savePath = folderSavePath + "\\save.bin";
-            checkSave(savePath);
+            //folderSavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\CryptographyTutor";
+            //savePath = folderSavePath + "\\save.bin";
+            //checkSave(savePath);
         }
-
+/*
         private void checkSave(string sPath)
         {
             if (File.Exists(sPath)==true)
@@ -62,6 +62,6 @@ namespace CryptographyTutor
                 this.Close();
                 tutorialWindow.Show();
             }
-        }
+        }*/
     }
 }

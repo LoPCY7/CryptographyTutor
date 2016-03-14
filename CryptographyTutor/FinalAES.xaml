@@ -7,5 +7,9 @@
         xmlns:Content="clr-namespace:CryptographyTutor.Content" x:Class="CryptographyTutor.FinalAES"
         mc:Ignorable="d"
         Title="FinalAES" Height="300" Width="300">
-    <Grid/>
+    <Grid>
+        <RadioButton x:Name="rbtn128" Content="128" HorizontalAlignment="Left" Height="24" Margin="57,74,0,0" VerticalAlignment="Top" Width="89" IsChecked="True"/>
+        <RadioButton x:Name="rbtn192" Content="192" HorizontalAlignment="Left" Height="24" Margin="57,103,0,0" VerticalAlignment="Top" Width="89"/>
+        <RadioButton x:Name="rbtn256" Content="256" HorizontalAlignment="Left" Height="24" Margin="57,132,0,0" VerticalAlignment="Top" Width="89"/>
+    </Grid>
 </Window>
