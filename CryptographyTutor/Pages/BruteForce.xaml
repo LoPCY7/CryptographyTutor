@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="CryptographyTutor.Pages.BruteForce"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:content="clr-namespace:CryptographyTutor.Content"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel>
+                <Grid HorizontalAlignment="Left" MinWidth="400">
+                    <StackPanel HorizontalAlignment="Left">
+                        <TextBlock Text="Encryption Method:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+                        <ListBox Margin="0,0,0,32">
+                            <ListBoxItem Content="AES 128bit"/>
+                            <ListBoxItem Content="AES 192bit"/>
+                            <ListBoxItem Content="AES 256bit"/>
+                            <ListBoxItem Content="SHA-1+AES 128bit"/>
+                            <ListBoxItem Content="SHA-256+AES 192bit"/>
+                            <ListBoxItem Content="SHA-256+AES 256bit"/>
+                            <ListBoxItem Content="DES"/>
+                            <ListBoxItem Content="Triple DES"/>
+                            <ListBoxItem Content="Blowfish"/>
+                        </ListBox>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right">
+                        <TextBlock Text="Additional Parameters:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+                        <ListBox Margin="0,0,0,32">
+                            <ListBoxItem Content="No limitations"/>
+                            <ListBoxItem Content="ASCII 0x20..0x7f"/>
+                            <ListBoxItem Content="Only a-z"/>
+                            <ListBoxItem Content="Only A-Z"/>
+                            <ListBoxItem Content="Only numbers (0-9)"/>
+                            <ListBoxItem Content="Only a-z and A-Z and 0-9"/>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock Text="Number of CPU Cores:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+                    <ListBox x:Name="lboxCPU"  Margin="0,0,0,32"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

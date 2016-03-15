@@ -106,3 +106,17 @@ C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\Cryptogra
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\Introduction.g.cs
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\Introduction.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\BruteForce.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\BruteForce.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\TutorIntro.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\TutorIntro.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\EncryptionAES.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Pages\EncryptionAES.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\AES\Decryption.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\AES\Encryption.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\DES\Decryption.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\DES\Encryption.baml
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\AES\Decryption.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\AES\Encryption.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\DES\Decryption.g.cs
+C:\Users\paris\documents\visual studio 2015\Projects\CryptographyTutor\CryptographyTutor\obj\Debug\Content\EncrPages\DES\Encryption.g.cs

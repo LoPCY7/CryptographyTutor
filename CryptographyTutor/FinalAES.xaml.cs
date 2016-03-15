@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CryptographyTutor.CMethods;
+using System.Runtime.InteropServices;
+using System.IO;
+using Microsoft.Win32.SafeHandles;
 
 namespace CryptographyTutor
 {
@@ -21,6 +24,24 @@ namespace CryptographyTutor
 
     public partial class FinalAES : Window
     {
+
+
+        [DllImport("kernel32.dll",
+            EntryPoint = "GetStdHandle",
+            SetLastError = true,
+            CharSet = CharSet.Auto,
+            CallingConvention = CallingConvention.StdCall)]
+        private static extern IntPtr GetStdHandle(int nStdHandle);
+        [DllImport("kernel32.dll",
+            EntryPoint = "AllocConsole",
+            SetLastError = true,
+            CharSet = CharSet.Auto,
+            CallingConvention = CallingConvention.StdCall)]
+        private static extern int AllocConsole();
+        private const int STD_OUTPUT_HANDLE = -11;
+        private const int MY_CODE_PAGE = 437;
+
+
         public enum Mode { ECB, CBC }
         public enum KeySize { b128, b192, b256 }
         public Mode aesMode;
@@ -84,6 +105,7 @@ namespace CryptographyTutor
 
         private byte[] encryptECB(byte[] input, byte[] key)
         {
+            setSize();
             AESClass aesRun;
             byte[] result;
             if (keySize == KeySize.b128)
@@ -101,6 +123,7 @@ namespace CryptographyTutor
 
         private byte[] decryptECB(byte[] input, byte[] key)
         {
+            setSize();
             AESClass aesRun;
             byte[] result = new byte[input.Length];
             if (keySize == KeySize.b128)
@@ -115,5 +138,81 @@ namespace CryptographyTutor
             return result;
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            AllocConsole();
+            IntPtr stdHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+            SafeFileHandle safeFileHandle = new SafeFileHandle(stdHandle, true);
+            FileStream fileStream = new FileStream(safeFileHandle, FileAccess.Write);
+            Encoding encoding = System.Text.Encoding.GetEncoding(MY_CODE_PAGE);
+            StreamWriter standardOutput = new StreamWriter(fileStream, encoding);
+            standardOutput.AutoFlush = true;
+            Console.SetOut(standardOutput);
+            string plain = textBox.Text;
+            byte[] plainText = System.Text.Encoding.UTF8.GetBytes(plain);
+
+            Console.WriteLine("\nThe plaintext is: ");
+            DisplayAsBytes(plainText);
+            System.Console.WriteLine(byte2Hex(plainText));
+
+            byte[] cipherText;
+            byte[] decipheredText;
+            byte[] keyBytes = hex2Byte(textBox1.Text);
+
+            Console.WriteLine("\nUsing a " + AESClass.KeySize.b128.ToString() + "-key of: ");
+            DisplayAsBytes(keyBytes);
+            System.Console.WriteLine(byte2Hex(keyBytes));
+
+            cipherText = encryptECB(plainText, keyBytes);
+
+            Console.WriteLine("\nThe resulting ciphertext is: ");
+            DisplayAsBytes(cipherText);
+            System.Console.WriteLine(byte2Hex(cipherText));
+
+            decipheredText = decryptECB(cipherText, keyBytes);
+
+            Console.WriteLine("\nAfter deciphering the ciphertext, the result is: ");
+            DisplayAsBytes(decipheredText);
+            System.Console.WriteLine(byte2Hex(decipheredText));
+            System.Console.WriteLine(">>>{0}<<<", System.Text.Encoding.UTF7.GetString(decipheredText));
+
+            Console.WriteLine("\nDone");
+        }
+
+
+        private static string byte2Hex(byte[] bytes)
+        {
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder(bytes.Length * 2);
+
+            foreach (byte b in bytes)
+                sb.AppendFormat("{0:x2}", b);
+
+            return sb.ToString();
+        }
+
+        public static byte[] hex2Byte(string hexString)
+        {
+
+            int n = hexString.Length;
+
+            byte[] bytes = new byte[n / 2];
+
+            for (int i = 0; i < n; i += 2)
+                bytes[i / 2] = System.Convert.ToByte(hexString.Substring(i, 2), 16);
+
+            return bytes;
+        }
+
+        static void DisplayAsBytes(byte[] bytes)
+        {
+
+            for (int i = 0; i < bytes.Length; ++i)
+            {
+                System.Console.Write(bytes[i].ToString("x2") + " ");
+                if (i > 0 && i % 16 == 0) System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
     }
 }

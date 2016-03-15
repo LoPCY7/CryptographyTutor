@@ -64,6 +64,24 @@
     </Compile>
     <Compile Include="CMethods\AESClass.cs" />
     <Compile Include="ContentLoader.cs" />
+    <Compile Include="Content\EncrPages\AES\Decryption.xaml.cs">
+      <DependentUpon>Decryption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\EncrPages\AES\Encryption.xaml.cs">
+      <DependentUpon>Encryption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\EncrPages\DES\Decryption.xaml.cs">
+      <DependentUpon>Decryption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\EncrPages\DES\Encryption.xaml.cs">
+      <DependentUpon>Encryption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BruteForce.xaml.cs">
+      <DependentUpon>BruteForce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EncryptionAES.xaml.cs">
+      <DependentUpon>EncryptionAES.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -79,6 +97,9 @@
     </Compile>
     <Compile Include="Pages\Introduction.xaml.cs">
       <DependentUpon>Introduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TutorIntro.xaml.cs">
+      <DependentUpon>TutorIntro.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResultsPage.xaml.cs">
       <DependentUpon>ResultsPage.xaml</DependentUpon>
@@ -101,7 +122,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Content\EncrPages\AES\Decryption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\EncrPages\AES\Encryption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\EncrPages\DES\Decryption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\EncrPages\DES\Encryption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Content\IntroToBC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BruteForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EncryptionAES.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +220,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\TutorIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResultsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -220,6 +269,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Tutor\Chapter1\" />
+    <Folder Include="Content\Tutor\Chapter2\" />
+    <Folder Include="Content\Tutor\Chapter3\" />
+    <Folder Include="Content\Tutor\Chapter4\" />
+    <Folder Include="Content\Tutor\Chapter5\" />
+    <Folder Include="Content\Tutor\Chapter6\" />
     <Folder Include="Controls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

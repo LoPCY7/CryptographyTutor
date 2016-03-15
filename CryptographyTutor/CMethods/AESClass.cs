@@ -34,15 +34,15 @@ namespace CryptographyTutor.CMethods
 
         public AESClass(KeySize keySize, byte[] keyBytes)
         {
+            SetNbNkNr(keySize);
             this.key = new byte[this.Nk * 4];  // 16, 24, 32 bytes
             keyBytes.CopyTo(this.key, 0);
-            SetNbNkNr();
             BuildSbox();
             BuildInvSbox();
             BuildRcon();
             KeyExpansion(); // expand the seed key into a key schedule and store in w
         }
-        private void SetNbNkNr()
+        private void SetNbNkNr(KeySize keySize)
         {
             if (keySize == KeySize.b128)
             {
