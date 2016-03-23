@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="CryptographyTutor.Pages.AESSim"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel HorizontalAlignment="Left">
+                <TextBlock Text="AES Simulator" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
+                <StackPanel MinWidth="200">
+                    <Grid HorizontalAlignment="Left" MinWidth="300" Margin="0,0,0,8">
+                        <TextBlock Text="Select Function:" HorizontalAlignment="Left"/>
+                        <Grid HorizontalAlignment="Right" MinWidth="180">
+                            <RadioButton x:Name="rbtnEncryption" HorizontalAlignment="Left" Content="Encryption" Checked="rbtnEncryption_Checked"/>
+                            <RadioButton x:Name="rbtnDecryption" HorizontalAlignment="Right" Content="Decryption" Checked="rbtnDecryption_Checked"/>
+                        </Grid>
+                    </Grid>
+                    <TextBox x:Name="txtProcessed" Text="Encrypted Text..." MinHeight="100" Margin="0,0,0,8" Background="Transparent" BorderThickness="2" IsReadOnly="True" TextWrapping="Wrap" />
+                    <Grid HorizontalAlignment="Left" Margin="0,0,0,8" MinWidth="350">
+                        <TextBlock Text="Input Key:" HorizontalAlignment="Left"/>
+                        <xctk:MaskedTextBox  x:Name="txtKey" CaretIndex="0" HorizontalAlignment="Right" TextWrapping="Wrap" Width="280"/>
+                    </Grid>
+                    <xctk:WatermarkTextBox x:Name="txtIV" Watermark="Input IV" Margin="0,0,0,8" IsEnabled="False"/>
+                    <xctk:WatermarkTextBox x:Name="txtInput" Watermark="Input Text" Margin="0,0,0,8" MinHeight="100"/>
+                    <Grid HorizontalAlignment="Center" MinWidth="250">
+                        <StackPanel Margin="0,0,0,8" HorizontalAlignment="Left">
+                            <TextBlock Text="Select mode:"/>
+                            <RadioButton x:Name="rbtnECB" Content="ECB" IsChecked="True" HorizontalAlignment="Right" Checked="rbtnECB_Checked"/>
+                            <RadioButton x:Name="rbtnCBC" Content="CBC" HorizontalAlignment="Right" Checked="rbtnCBC_Checked"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8" HorizontalAlignment="Right">
+                            <TextBlock Text="Select the size of the key:"/>
+                            <RadioButton x:Name="rbtn128" Content="128" IsChecked="True" HorizontalAlignment="Right" Checked="rbtn128_Checked"/>
+                            <RadioButton x:Name="rbtn192" Content="192" HorizontalAlignment="Right" Checked="rbtn192_Checked"/>
+                            <RadioButton x:Name="rbtn256" Content="256" HorizontalAlignment="Right" Checked="rbtn256_Checked"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" MinWidth="130" Margin="0,0,0,16">
+                        <TextBlock Text="Explanation Mode" HorizontalAlignment="Left"/>
+                        <CheckBox x:Name="chbExpMode" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <StackPanel Margin="0,0,0,8" HorizontalAlignment="Center">
+                        <Button x:Name="btnProcess" Content="Encrypt" Click="btnProcess_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

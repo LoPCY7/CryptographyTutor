@@ -1,23 +1,55 @@
-﻿    <mui:ModernWindow x:Class="CryptographyTutor.MainWindow"
+﻿    <mui:ModernWindow x:Class="CryptographyTutor.MainWindow" 
                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
                   xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-                  mc:Ignorable="d"
-                  Title="MainWindow"
+                  xmlns:app="clr-namespace:CryptographyTutor"
+                  Title="Cryptography Tutor" IsTitleVisible="True"
                   WindowStartupLocation="CenterScreen"
-                  Style="{StaticResource BlankWindow}" Height="313.725" Width="525">
-    <Grid Background="#FFA8A8A8">
-        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Height="41" Margin="190,224,0,0" VerticalAlignment="Top" Width="131" Click="button1_Click"/>
-        <Button x:Name="btnTutor" Content="Tutor" HorizontalAlignment="Left" Height="41" Margin="190,132,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click"/>
-        <GroupBox x:Name="groupBox" Header="Encryption" HorizontalAlignment="Left" Margin="70,31,0,0" VerticalAlignment="Top" Height="96" Width="402">
-            <Grid HorizontalAlignment="Left" Height="61" Margin="28,9,0,0" VerticalAlignment="Top" Width="318">
-                <Button x:Name="btnEncrypt" Content="Encrypt Text" HorizontalAlignment="Left" Height="41" Margin="10,5,0,0" VerticalAlignment="Top" Width="131" Click="button_Click"/>
-                <Button x:Name="btnBruteForce" Content="Brute Force" HorizontalAlignment="Left" Height="41" Margin="192,10,0,0" VerticalAlignment="Top" Width="131" Click="btnBruteForce_Click"/>
-            </Grid>
-        </GroupBox>
-        <Button x:Name="button2" Content="CBC" HorizontalAlignment="Left" Height="41" Margin="190,178,0,0" VerticalAlignment="Top" Width="131" Click="button2_Click_1"/>
+                  ContentSource="/Pages/Introduction.xaml"
+                  Width="800" Height="700"
+                  KeyDown="Window_KeyDown">
 
-    </Grid>
-</mui:ModernWindow>
+        <mui:ModernWindow.TitleLinks>
+            <mui:Link DisplayName="Settings" Source="/Pages/Settings.xaml" />
+        </mui:ModernWindow.TitleLinks>
+
+        <mui:ModernWindow.MenuLinkGroups>
+            <mui:LinkGroup DisplayName="Welcome">
+                <mui:LinkGroup.Links>
+                    <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
+                </mui:LinkGroup.Links>
+            </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Tutor">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Introduction" Source="/Pages/Tutor/Introduction.xaml" />
+                <mui:Link DisplayName="Classical Encryption Techniques" Source="/Pages/Tutor/CET.xaml" />
+                <mui:Link DisplayName="Block Ciphers" Source="/Pages/Tutor/BCiphers.xaml" />
+                <mui:Link DisplayName="DES" Source="/Pages/Tutor/DES.xaml" />
+                <mui:Link DisplayName="AES" Source="/Pages/Tutor/AES.xaml" />
+                <mui:Link DisplayName="Brute Force" Source="/Pages/Tutor/BruteForce.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Encryption">
+            <mui:LinkGroup.Links>
+               <!--<mui:Link DisplayName="DES" Source="/Pages/EncryptionDES.xaml" />-->
+                <mui:Link DisplayName="AES" Source="/Pages/AESSim.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Brute Force">
+                <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Main" Source="/Pages/BruteForce.xaml" />
+                </mui:LinkGroup.Links>
+            </mui:LinkGroup>
+            <mui:LinkGroup DisplayName="Other">
+                <mui:LinkGroup.Links>
+                    <mui:Link DisplayName="Presentations" Source="/Pages/Presentations.xaml" />
+                <mui:Link DisplayName="Achievements" Source="/Pages/Achievements.xaml" />
+                </mui:LinkGroup.Links>
+            </mui:LinkGroup>
+            <mui:LinkGroup DisplayName="Settings" GroupKey="settings">
+                <mui:LinkGroup.Links>
+                    <mui:Link DisplayName="Software" Source="/Pages/Settings.xaml" />
+                </mui:LinkGroup.Links>
+            </mui:LinkGroup>
+        </mui:ModernWindow.MenuLinkGroups>
+    </mui:ModernWindow>

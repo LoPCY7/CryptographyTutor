@@ -1,6 +1,7 @@
 ﻿using FirstFloor.ModernUI.Windows.Controls;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,52 +12,57 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
 
 namespace CryptographyTutor
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Intro.xaml
     /// </summary>
     public partial class MainWindow : ModernWindow
     {
+        string connectionString;
+
         public MainWindow()
         {
             InitializeComponent();
+            connectionString = @"DataSource=";
+            //folderSavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\CryptographyTutor";
+            //savePath = folderSavePath + "\\save.bin";
+            //checkSave(savePath);
         }
+        /*
+                private void checkSave(string sPath)
+                {
+                    if (File.Exists(sPath)==true)
+                    {
+                        GameWindow tutor = new GameWindow(0);
+                        this.Close();
+                        tutor.Show();
+                    }
+                }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
+                
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            AESTest aesWindow = new AESTest();
-            this.Hide();
-            aesWindow.Show();
-        }
+                private void btnConfirmName_Click(object sender, RoutedEventArgs e)
+                {
+                    MessageBoxResult result = MessageBox.Show("Is your name "+textBox.Text+"?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        String playerName = textBox.Text;
+                        TutorialWindow tutorialWindow = new TutorialWindow(playerName);
+                        createSave(playerName);
+                        this.Close();
+                        tutorialWindow.Show();
+                    }
+                }*/
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            GameWindow tutor = new GameWindow(0);
-            this.Hide();
-            tutor.Show();
-        }
-
-        private void btnBruteForce_Click(object sender, RoutedEventArgs e)
-        {
-            BruteForce brForceWindow = new BruteForce();
-            this.Hide();
-            brForceWindow.Show();
-        }
-
-        private void button2_Click_1(object sender, RoutedEventArgs e)
-        {
-            TestCBC testCBC = new TestCBC();
-            this.Hide();
-            testCBC.Show();
+            if ((e.Key == Key.G) &&
+                (e.KeyboardDevice.Modifiers == ModifierKeys.Control))
+                MessageBox.Show("Ctrl+G detected");
         }
     }
 }

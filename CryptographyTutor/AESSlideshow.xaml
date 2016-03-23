@@ -1,0 +1,24 @@
+﻿<mui:ModernWindow x:Class="CryptographyTutor.AESSlideshow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d"
+                  Title="AES Slideshow"
+                  WindowStartupLocation="CenterScreen"
+                  Style="{StaticResource BlankWindow}" Height="750" Width="950">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel>
+                <StackPanel HorizontalAlignment="Center" Margin="0,0,0,8">
+                    <Image Name="imageAES" Height="522" Width="802"/>
+                </StackPanel>
+                <Grid HorizontalAlignment="Center" MinWidth="220" Margin="0,0,0,8">
+                <Button Name="btnPrevious" Content="Previous" HorizontalAlignment="Left"  Height="31" Width="95" Click="btnPrevious_Click"/>
+                <Button Name="btnNext" Content="Next" HorizontalAlignment="Right" Height="31" Width="95" Click="btnNext_Click"/>
+            </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</mui:ModernWindow> 
