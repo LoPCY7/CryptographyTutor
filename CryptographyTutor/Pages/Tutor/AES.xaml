@@ -11,10 +11,32 @@
             <StackPanel HorizontalAlignment="Left">
                 <TextBlock Text="AES" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
 
-                <mui:ModernTab SelectedSource="/Content/EncrPages/AES/Encryption.xaml" Layout="List">
+                <mui:ModernTab SelectedSource="/Content/Tutor/AES/1.xaml" Layout="List">
                     <mui:ModernTab.Links>
-                        <mui:Link DisplayName="Chapter 1" Source="/Content/EncrPages/AES/Encryption.xaml" />
-                        <mui:Link DisplayName="Chapter 2" Source="/Content/EncrPages/AES/Decryption.xaml" />
+                        <mui:Link DisplayName="Advanced Encryption Standard" Source="/Content/Tutor/AES/1.xaml" />
+                        <mui:Link DisplayName="AES" Source="/Content/Tutor/AES/2.xaml" />
+                        <mui:Link DisplayName="Origins" Source="/Content/Tutor/AES/3.xaml" />
+                        <mui:Link DisplayName="The AES Cipher - Rijndael" Source="/Content/Tutor/AES/4.xaml" />
+                        <mui:Link DisplayName="AES Encryption Process" Source="/Content/Tutor/AES/5.xaml" />
+                        <mui:Link DisplayName="AES Structure" Source="/Content/Tutor/AES/6.xaml" />
+                        <mui:Link DisplayName="Some Comments on AES" Source="/Content/Tutor/AES/7.xaml" />
+                        <mui:Link DisplayName="Substitution Bytes" Source="/Content/Tutor/AES/8.xaml" />
+                        <mui:Link DisplayName="Substitution Bytes Example" Source="/Content/Tutor/AES/9.xaml" />
+                        <mui:Link DisplayName="Shift Rows" Source="/Content/Tutor/AES/10.xaml" />
+                        <mui:Link DisplayName="Mix Columns" Source="/Content/Tutor/AES/11.xaml" />
+                        <mui:Link DisplayName="Mix Columns Example" Source="/Content/Tutor/AES/12.xaml" />
+                        <mui:Link DisplayName="AES Arithmetic" Source="/Content/Tutor/AES/13.xaml" />
+                        <mui:Link DisplayName="Mix Columns" Source="/Content/Tutor/AES/14.xaml" />
+                        <mui:Link DisplayName="Add Round Key" Source="/Content/Tutor/AES/15.xaml" />
+                        <mui:Link DisplayName="AES Round" Source="/Content/Tutor/AES/16.xaml" />
+                        <mui:Link DisplayName="AES Key Expansion" Source="/Content/Tutor/AES/17.xaml" />
+                        <mui:Link DisplayName="Key Expansion Rationale" Source="/Content/Tutor/AES/18.xaml" />
+                        <mui:Link DisplayName="AES Example Key Expansion" Source="/Content/Tutor/AES/19.xaml" />
+                        <mui:Link DisplayName="AES Example Encryption" Source="/Content/Tutor/AES/20.xaml" />
+                        <mui:Link DisplayName="AES Example Avalanche" Source="/Content/Tutor/AES/21.xaml" />
+                        <mui:Link DisplayName="AES Decryption" Source="/Content/Tutor/AES/22.xaml" />
+                        <mui:Link DisplayName="Implementation Aspects" Source="/Content/Tutor/AES/23.xaml" />
+                        <mui:Link DisplayName="Summary" Source="/Content/Tutor/AES/24.xaml" />
                     </mui:ModernTab.Links>
                 </mui:ModernTab>
             </StackPanel>

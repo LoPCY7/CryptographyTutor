@@ -11,10 +11,29 @@
             <StackPanel HorizontalAlignment="Left">
                 <TextBlock Text="Classical Encryption Techniques" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
 
-                <mui:ModernTab SelectedSource="/Content/EncrPages/AES/Encryption.xaml" Layout="List">
+                <mui:ModernTab SelectedSource="/Content/Tutor/CET/1.xaml" Layout="List">
                     <mui:ModernTab.Links>
-                        <mui:Link DisplayName="Chapter 1" Source="/Content/EncrPages/AES/Encryption.xaml" />
-                        <mui:Link DisplayName="Chapter 2" Source="/Content/EncrPages/AES/Decryption.xaml" />
+                        <mui:Link DisplayName="Classical Encryption Techniques" Source="/Content/Tutor/CET/1.xaml" />
+                        <mui:Link DisplayName="Symmetric Encryption" Source="/Content/Tutor/CET/2.xaml" />
+                        <mui:Link DisplayName="Basic Terminology" Source="/Content/Tutor/CET/3.xaml" />
+                        <mui:Link DisplayName="Symmetric Cipher Model" Source="/Content/Tutor/CET/4.xaml" />
+                        <mui:Link DisplayName="Requirements" Source="/Content/Tutor/CET/5.xaml" />
+                        <mui:Link DisplayName="Cryptography" Source="/Content/Tutor/CET/6.xaml" />
+                        <mui:Link DisplayName="Cryptanalysis" Source="/Content/Tutor/CET/7.xaml" />
+                        <mui:Link DisplayName="Cryptanalytic Attacks" Source="/Content/Tutor/CET/8.xaml" />
+                        <mui:Link DisplayName="More Definitions" Source="/Content/Tutor/CET/9.xaml" />
+                        <mui:Link DisplayName="Brute Force Search" Source="/Content/Tutor/CET/10.xaml" />
+                        <mui:Link DisplayName="Classical Substitution Ciphers" Source="/Content/Tutor/CET/11.xaml" />
+                        <mui:Link DisplayName="Caeser Cipher" Source="/Content/Tutor/CET/12.xaml" />
+                        <mui:Link DisplayName="Cryptanalysis of Caeser Cipher" Source="/Content/Tutor/CET/13.xaml" />
+                        <mui:Link DisplayName="Monoalphabetic Cipher" Source="/Content/Tutor/CET/14.xaml" />
+                        <mui:Link DisplayName="Monoalphabetic Cipher Security" Source="/Content/Tutor/CET/15.xaml" />
+                        <mui:Link DisplayName="Language Redundancy and Cryptanalysis" Source="/Content/Tutor/CET/16.xaml" />
+                        <mui:Link DisplayName="English Letter Frequencies" Source="/Content/Tutor/CET/17.xaml" />
+                        <mui:Link DisplayName="Use in Cryptanalysis" Source="/Content/Tutor/CET/18.xaml" />
+                        <mui:Link DisplayName="Example of Cryptanalysis" Source="/Content/Tutor/CET/19.xaml" />
+                        <mui:Link DisplayName="One-Time Pad" Source="/Content/Tutor/CET/20.xaml" />
+                        <mui:Link DisplayName="Summary" Source="/Content/Tutor/CET/21.xaml" />
                     </mui:ModernTab.Links>
                 </mui:ModernTab>
             </StackPanel>

@@ -7,13 +7,12 @@
                   mc:Ignorable="d" 
                   ContentSource="/Pages/Introduction.xaml"
                   Width="800" Height="700"
-                  Title="ModernWindow"
-                  WindowStartupLocation="CenterScreen">
-    <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="Welcome">
-            <mui:LinkGroup.Links>
-                <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
-            </mui:LinkGroup.Links>
-        </mui:LinkGroup>
-    </mui:ModernWindow.MenuLinkGroups>
+                  Title="Cryptography Tutor" IsTitleVisible="True"
+                  WindowStartupLocation="CenterScreen"
+                  Style="{StaticResource BlankWindow}"
+                  xmlns:content="clr-namespace:CryptographyTutor.Pages">
+    <Grid Style="{StaticResource ContentRoot}" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <content:Introduction />
+    </Grid>
+    
 </mui:ModernWindow>

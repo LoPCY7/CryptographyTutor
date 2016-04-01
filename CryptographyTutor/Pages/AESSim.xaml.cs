@@ -22,13 +22,56 @@ namespace CryptographyTutor.Pages
     /// </summary>
     public partial class AESSim : UserControl
     {
+        private const int cBlockSizeInBytes = 16;
+
         public AESSim()
         {
             InitializeComponent();
             rbtnEncryption.IsChecked = true;
-            txtKey.Mask= "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
+            txtKey.Mask = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
         }
 
+        /* PKCS5/PKCS7 compliant padding */
+     /*   private static byte[] appendPadding(byte[] data)
+        {
+
+            int cnt = data.Length;
+            int paddingLenght = cBlockSizeInBytes - (cnt % cBlockSizeInBytes);
+            int paddedLenght = cnt + paddingLenght;
+            byte[] res = new byte[paddedLenght];
+
+            for (int i = 0; i < paddedLenght; i++)
+                res[i] = (i < cnt) ? data[i] : (byte)paddingLenght;
+
+            System.Console.WriteLine("paddedLenght=" + paddingLenght);
+            DisplayAsBytes(res);
+            return res;
+        }
+
+        private static byte[] removePadding(byte[] paddedData)
+        {
+
+            int paddedLength = paddedData.Length;
+            int cnt = 1;
+
+            for (int i = paddedLength - 1; i >= 0; i--, cnt++)
+                if (paddedData[i] != paddedData[i - 1]) break;
+
+            if ((cnt % cBlockSizeInBytes) != (int)paddedData[paddedLength - 1])
+                throw new System.Exception("Padding error: cnt=" + cnt +
+                                            "; bs=" + cBlockSizeInBytes + "; byte=" +
+                                            paddedData[paddedLength - 1] + ";");
+
+            byte[] res = new byte[paddedLength - cnt];
+
+            for (int i = 0; i < paddedLength - cnt; i++)
+                res[i] = paddedData[i];
+
+            return res;
+        }*/
+
+
+        /*
         private string encrypt(string inputText, string AESKey, string AESIV)
         {
             RijndaelManaged aes = new RijndaelManaged();
@@ -97,7 +140,12 @@ namespace CryptographyTutor.Pages
 
             return (System.Text.Encoding.UTF8.GetString(planeText));
         }
+        */
+        private string encrypt(string inputText, string AESKey, string AESIV)
+        {
 
+            return null;
+        }
         private void btnProcess_Click(object sender, RoutedEventArgs e)
         {
             if (rbtnEncryption.IsChecked == true)
@@ -110,7 +158,49 @@ namespace CryptographyTutor.Pages
                 }
             }
             else
-                txtProcessed.Text = decrypt(txtInput.Text, txtKey.Text, txtIV.Text);
+       //         txtProcessed.Text = decrypt(txtInput.Text, txtKey.Text, txtIV.Text);
+            if (chbExport.IsChecked == true)
+                exportToText();
+        }
+
+        private void exportToText()
+        {
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "Document"; // Default file name
+            dlg.DefaultExt = ".text"; // Default file extension
+            dlg.Filter = "Text documents (.txt)|*.txt"; // Filter files by extension
+
+            // Show save file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Process save file dialog box results
+            if (result == true)
+            {
+                // Save document
+                string filename = dlg.FileName;
+                File.Create(filename).Close();
+                TextWriter tw = new StreamWriter(filename);
+                tw.WriteLine("Input text: " + txtInput.Text);
+                tw.WriteLine("Key: " + txtKey.Text);
+                if (rbtn128.IsChecked == true)
+                    tw.WriteLine("Key Size: 128");
+                else if (rbtn192.IsChecked == true)
+                    tw.WriteLine("Key Size: 192");
+                else
+                    tw.WriteLine("Key Size: 256");
+                if (rbtnECB.IsChecked == true)
+                    tw.WriteLine("Mode: ECB");
+                else
+                {
+                    tw.WriteLine("Mode: CBC");
+                    tw.WriteLine("IV: " + txtIV.Text);
+                }
+                if (rbtnEncryption.IsChecked == true)
+                    tw.WriteLine("Encrypted text: " + txtProcessed.Text);
+                else
+                    tw.WriteLine("Decrypted text: " + txtProcessed.Text);
+                tw.Close();
+            }
         }
 
         private void rbtnCBC_Checked(object sender, RoutedEventArgs e)

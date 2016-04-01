@@ -106,22 +106,262 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AESEncryption.xaml.cs">
-      <DependentUpon>AESEncryption.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CMethods\AESClass.cs" />
     <Compile Include="ContentLoader.cs" />
     <Compile Include="Content\Achievements.xaml.cs">
       <DependentUpon>Achievements.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\EncrPages\DES\Decryption.xaml.cs">
-      <DependentUpon>Decryption.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Content\EncrPages\DES\Encryption.xaml.cs">
-      <DependentUpon>Encryption.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Content\GeneralSettings.xaml.cs">
       <DependentUpon>GeneralSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\1.xaml.cs">
+      <DependentUpon>1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\10.xaml.cs">
+      <DependentUpon>10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\11.xaml.cs">
+      <DependentUpon>11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\12.xaml.cs">
+      <DependentUpon>12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\13.xaml.cs">
+      <DependentUpon>13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\14.xaml.cs">
+      <DependentUpon>14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\15.xaml.cs">
+      <DependentUpon>15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\16.xaml.cs">
+      <DependentUpon>16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\17.xaml.cs">
+      <DependentUpon>17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\18.xaml.cs">
+      <DependentUpon>18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\22.xaml.cs">
+      <DependentUpon>22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\19.xaml.cs">
+      <DependentUpon>19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\2.xaml.cs">
+      <DependentUpon>2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\24.xaml.cs">
+      <DependentUpon>24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\20.xaml.cs">
+      <DependentUpon>20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\23.xaml.cs">
+      <DependentUpon>23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\21.xaml.cs">
+      <DependentUpon>21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\3.xaml.cs">
+      <DependentUpon>3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\4.xaml.cs">
+      <DependentUpon>4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\5.xaml.cs">
+      <DependentUpon>5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\6.xaml.cs">
+      <DependentUpon>6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\7.xaml.cs">
+      <DependentUpon>7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\8.xaml.cs">
+      <DependentUpon>8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\AES\9.xaml.cs">
+      <DependentUpon>9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\1.xaml.cs">
+      <DependentUpon>1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\10.xaml.cs">
+      <DependentUpon>10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\11.xaml.cs">
+      <DependentUpon>11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\12.xaml.cs">
+      <DependentUpon>12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\13.xaml.cs">
+      <DependentUpon>13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\14.xaml.cs">
+      <DependentUpon>14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\15.xaml.cs">
+      <DependentUpon>15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\16.xaml.cs">
+      <DependentUpon>16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\17.xaml.cs">
+      <DependentUpon>17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\18.xaml.cs">
+      <DependentUpon>18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\19.xaml.cs">
+      <DependentUpon>19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\2.xaml.cs">
+      <DependentUpon>2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\20.xaml.cs">
+      <DependentUpon>20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\3.xaml.cs">
+      <DependentUpon>3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\4.xaml.cs">
+      <DependentUpon>4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\5.xaml.cs">
+      <DependentUpon>5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\6.xaml.cs">
+      <DependentUpon>6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\7.xaml.cs">
+      <DependentUpon>7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\8.xaml.cs">
+      <DependentUpon>8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\BCiphers\9.xaml.cs">
+      <DependentUpon>9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\17.xaml.cs">
+      <DependentUpon>17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\1.xaml.cs">
+      <DependentUpon>1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\10.xaml.cs">
+      <DependentUpon>10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\11.xaml.cs">
+      <DependentUpon>11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\12.xaml.cs">
+      <DependentUpon>12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\13.xaml.cs">
+      <DependentUpon>13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\14.xaml.cs">
+      <DependentUpon>14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\15.xaml.cs">
+      <DependentUpon>15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\16.xaml.cs">
+      <DependentUpon>16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\18.xaml.cs">
+      <DependentUpon>18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\2.xaml.cs">
+      <DependentUpon>2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\19.xaml.cs">
+      <DependentUpon>19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\3.xaml.cs">
+      <DependentUpon>3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\20.xaml.cs">
+      <DependentUpon>20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\4.xaml.cs">
+      <DependentUpon>4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\21.xaml.cs">
+      <DependentUpon>21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\5.xaml.cs">
+      <DependentUpon>5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\6.xaml.cs">
+      <DependentUpon>6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\7.xaml.cs">
+      <DependentUpon>7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\8.xaml.cs">
+      <DependentUpon>8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\CET\9.xaml.cs">
+      <DependentUpon>9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\1.xaml.cs">
+      <DependentUpon>1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\10.xaml.cs">
+      <DependentUpon>10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\11.xaml.cs">
+      <DependentUpon>11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\12.xaml.cs">
+      <DependentUpon>12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\13.xaml.cs">
+      <DependentUpon>13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\14.xaml.cs">
+      <DependentUpon>14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\15.xaml.cs">
+      <DependentUpon>15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\16.xaml.cs">
+      <DependentUpon>16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\2.xaml.cs">
+      <DependentUpon>2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\3.xaml.cs">
+      <DependentUpon>3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\4.xaml.cs">
+      <DependentUpon>4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\5.xaml.cs">
+      <DependentUpon>5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\6.xaml.cs">
+      <DependentUpon>6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\7.xaml.cs">
+      <DependentUpon>7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\8.xaml.cs">
+      <DependentUpon>8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tutor\Introduction\9.xaml.cs">
+      <DependentUpon>9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModernWindow1.xaml.cs">
+      <DependentUpon>ModernWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AchievementBox.xaml.cs">
+      <DependentUpon>AchievementBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Achievements.xaml.cs">
       <DependentUpon>Achievements.xaml</DependentUpon>
@@ -131,6 +371,9 @@
     </Compile>
     <Compile Include="Pages\AESSim.xaml.cs">
       <DependentUpon>AESSim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModernWindow1.xaml.cs">
+      <DependentUpon>ModernWindow1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Presentations.xaml.cs">
       <DependentUpon>Presentations.xaml</DependentUpon>
@@ -142,12 +385,6 @@
       <DependentUpon>SettingsAppearance.xaml</DependentUpon>
     </Compile>
     <Compile Include="Content\SettingsAppearanceViewModel.cs" />
-    <Compile Include="FinalAES.xaml.cs">
-      <DependentUpon>FinalAES.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GameTest.xaml.cs">
-      <DependentUpon>GameTest.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Introduction.xaml.cs">
       <DependentUpon>Introduction.xaml</DependentUpon>
     </Compile>
@@ -163,9 +400,6 @@
     <Compile Include="Pages\Tutor\CET.xaml.cs">
       <DependentUpon>CET.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Tutor\DES.xaml.cs">
-      <DependentUpon>DES.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Tutor\Introduction.xaml.cs">
       <DependentUpon>Introduction.xaml</DependentUpon>
     </Compile>
@@ -175,20 +409,14 @@
     <Compile Include="AESSlideshow.xaml.cs">
       <DependentUpon>AESSlideshow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TestCBC.xaml.cs">
-      <DependentUpon>TestCBC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TutorialWindow.xaml.cs">
-      <DependentUpon>TutorialWindow.xaml</DependentUpon>
+    <Compile Include="SQLiteDatabase.cs" />
+    <Compile Include="TutorialDialog.xaml.cs">
+      <DependentUpon>TutorialDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
     <Page Include="AESTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="AESTest2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -200,19 +428,343 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\EncrPages\DES\Decryption.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Content\EncrPages\DES\Encryption.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Content\GeneralSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Content\IntroToBC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\Tutor\AES\1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\AES\9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\BCiphers\9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\CET\9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Tutor\Introduction\9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModernWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AchievementBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -228,6 +780,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ModernWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Presentations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -240,18 +796,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FinalAES.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="GameTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="GameWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -260,15 +804,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindowold.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="AESTest.xaml.cs">
       <DependentUpon>AESTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AESTest2.xaml.cs">
-      <DependentUpon>AESTest2.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -277,23 +814,12 @@
     <Compile Include="BruteForce.xaml.cs">
       <DependentUpon>BruteForce.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameWindow.xaml.cs">
-      <DependentUpon>GameWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LevelWindow.xaml.cs">
       <DependentUpon>LevelWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindowold.xaml.cs">
-      <DependentUpon>MainWindowold.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="AESEncryption.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -318,10 +844,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Tutor\DES.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\Tutor\Introduction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -338,11 +860,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TestCBC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TutorialWindow.xaml">
+    <Page Include="TutorialDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -369,6 +887,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Database\cDB.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -380,12 +899,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Tutor\Chapter1\" />
-    <Folder Include="Content\Tutor\Chapter2\" />
-    <Folder Include="Content\Tutor\Chapter3\" />
-    <Folder Include="Content\Tutor\Chapter4\" />
-    <Folder Include="Content\Tutor\Chapter5\" />
-    <Folder Include="Content\Tutor\Chapter6\" />
+    <Folder Include="Content\Tutor\BruteForce\" />
     <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>

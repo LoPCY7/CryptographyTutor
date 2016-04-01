@@ -19,12 +19,18 @@
                     <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
                 </mui:LinkGroup.Links>
             </mui:LinkGroup>
-        <mui:LinkGroup DisplayName="Tutor">
+
+            <mui:LinkGroup DisplayName="Profile">
+                <mui:LinkGroup.Links>
+                    <mui:Link DisplayName="Main" Source="/Pages/Introduction.xaml" />
+                </mui:LinkGroup.Links>
+            </mui:LinkGroup>
+
+            <mui:LinkGroup DisplayName="Tutor">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Tutor/Introduction.xaml" />
                 <mui:Link DisplayName="Classical Encryption Techniques" Source="/Pages/Tutor/CET.xaml" />
                 <mui:Link DisplayName="Block Ciphers" Source="/Pages/Tutor/BCiphers.xaml" />
-                <mui:Link DisplayName="DES" Source="/Pages/Tutor/DES.xaml" />
                 <mui:Link DisplayName="AES" Source="/Pages/Tutor/AES.xaml" />
                 <mui:Link DisplayName="Brute Force" Source="/Pages/Tutor/BruteForce.xaml" />
             </mui:LinkGroup.Links>

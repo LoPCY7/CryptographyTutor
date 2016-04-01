@@ -39,11 +39,16 @@
                             <RadioButton x:Name="rbtn256" Content="256" HorizontalAlignment="Right" Checked="rbtn256_Checked"/>
                         </StackPanel>
                     </Grid>
-                    <Grid HorizontalAlignment="Left" MinWidth="130" Margin="0,0,0,16">
+                    <Grid HorizontalAlignment="Left" MinWidth="130" Margin="0,0,0,8">
                         <TextBlock Text="Explanation Mode" HorizontalAlignment="Left"/>
                         <CheckBox x:Name="chbExpMode" HorizontalAlignment="Right"/>
                     </Grid>
-                    <StackPanel Margin="0,0,0,8" HorizontalAlignment="Center">
+
+                    <Grid HorizontalAlignment="Left" MinWidth="130" Margin="0,0,0,16">
+                        <TextBlock Text="Export" HorizontalAlignment="Left"/>
+                        <CheckBox x:Name="chbExport" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <StackPanel Margin="0,0,0,8" HorizontalAlignment="Center" MinHeight="50" MinWidth="150">
                         <Button x:Name="btnProcess" Content="Encrypt" Click="btnProcess_Click"/>
                     </StackPanel>
                 </StackPanel>

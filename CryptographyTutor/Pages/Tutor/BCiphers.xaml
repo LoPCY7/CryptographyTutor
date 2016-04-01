@@ -11,10 +11,28 @@
             <StackPanel HorizontalAlignment="Left">
                 <TextBlock Text="Block Ciphers" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
 
-                <mui:ModernTab SelectedSource="/Content/EncrPages/AES/Encryption.xaml" Layout="List">
+                <mui:ModernTab SelectedSource="/Content/Tutor/BCiphers/1.xaml" Layout="List">
                     <mui:ModernTab.Links>
-                        <mui:Link DisplayName="Chapter 1" Source="/Content/EncrPages/AES/Encryption.xaml" />
-                        <mui:Link DisplayName="Chapter 2" Source="/Content/EncrPages/AES/Decryption.xaml" />
+                        <mui:Link DisplayName="Block Ciphers" Source="/Content/Tutor/BCiphers/1.xaml" />
+                        <mui:Link DisplayName="Modern Block Ciphers" Source="/Content/Tutor/BCiphers/2.xaml" />
+                        <mui:Link DisplayName="Block Cipher Principles" Source="/Content/Tutor/BCiphers/3.xaml" />
+                        <mui:Link DisplayName="Ideal Block Cipher" Source="/Content/Tutor/BCiphers/4.xaml" />
+                        <mui:Link DisplayName="Data Encryption Standard (DES)" Source="/Content/Tutor/BCiphers/5.xaml" />
+                        <mui:Link DisplayName="DES History" Source="/Content/Tutor/BCiphers/6.xaml" />
+                        <mui:Link DisplayName="DES Design Controversy" Source="/Content/Tutor/BCiphers/7.xaml" />
+                        <mui:Link DisplayName="DES Encryption Overview" Source="/Content/Tutor/BCiphers/8.xaml" />
+                        <mui:Link DisplayName="Initial Permulation IP" Source="/Content/Tutor/BCiphers/9.xaml" />
+                        <mui:Link DisplayName="DES Round Structure" Source="/Content/Tutor/BCiphers/10.xaml" />
+                        <mui:Link DisplayName="Substitution Boxes S" Source="/Content/Tutor/BCiphers/11.xaml" />
+                        <mui:Link DisplayName="DES Key Schedule" Source="/Content/Tutor/BCiphers/12.xaml" />
+                        <mui:Link DisplayName="DES Decryption" Source="/Content/Tutor/BCiphers/13.xaml" />
+                        <mui:Link DisplayName="DES Example" Source="/Content/Tutor/BCiphers/14.xaml" />
+                        <mui:Link DisplayName="Avalanche in DES" Source="/Content/Tutor/BCiphers/15.xaml" />
+                        <mui:Link DisplayName="Avalanche Effect" Source="/Content/Tutor/BCiphers/16.xaml" />
+                        <mui:Link DisplayName="Key Size" Source="/Content/Tutor/BCiphers/17.xaml" />
+                        <mui:Link DisplayName="Analytic Attacks" Source="/Content/Tutor/BCiphers/18.xaml" />
+                        <mui:Link DisplayName="Timing Attacks" Source="/Content/Tutor/BCiphers/19.xaml" />
+                        <mui:Link DisplayName="Summary" Source="/Content/Tutor/BCiphers/20.xaml" />
                     </mui:ModernTab.Links>
                 </mui:ModernTab>
             </StackPanel>

@@ -34,9 +34,9 @@ namespace CryptographyTutor
 
         private void btnProceed_Click(object sender, RoutedEventArgs e)
         {
-            GameWindow continueGame = new GameWindow(levelScore);
+            /*GameWindow continueGame = new GameWindow(levelScore);
             this.Close();
-            continueGame.Show();
+            continueGame.Show();*/
         }
 
         private void displayResults()
