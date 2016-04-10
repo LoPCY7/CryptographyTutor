@@ -9,8 +9,18 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Use in Cryptanalysis" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• key concept - monoalphabetic substitution ciphers" />
+<TextBlock Text="do not change relative letter frequencies" />
+<TextBlock Text="• discovered by Arabian scientists in 9th century" />
+<TextBlock Text="• calculate letter frequencies for ciphertext" />
+<TextBlock Text="• compare counts/plots against known values" />
+<TextBlock Text="• if caesar cipher look for common peaks/troughs" />
+<TextBlock Text="– peaks at: A-E-I triple, NO pair, RST triple" />
+<TextBlock Text="– troughs at: JK, X-Z" />
+<TextBlock Text="• for monoalphabetic must identify each letter" />
+<TextBlock Text="– tables of common double/triple letters help" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,11 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Security Service" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <TextBlock Text="Security Service enhances the security of data processing systems and information transfers of an organization." TextWrapping="Wrap" FontSize="18" />
+				<TextBlock Text="•It is intended to counter security attacks" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="-By using one or more security attacks" TextWrapping="Wrap" FontSize="14"/>
+				<TextBlock Text="-Often replicates functions normally associated with physical documents" TextWrapping="Wrap" FontSize="14"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

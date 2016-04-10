@@ -9,8 +9,10 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Examples of Security Requirements" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <TextBlock Text="•Confidentiality" FontSize="16"/>
+				<TextBlock Text="•Integrity" FontSize="16"/>
+				<TextBlock Text="•Availability" FontSize="16"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

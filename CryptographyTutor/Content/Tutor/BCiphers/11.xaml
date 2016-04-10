@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Substitution Boxes S" Style="{StaticResource Heading1}" />
+                <TextBlock Text="have eight S-boxes which map 6 to 4 bits" />
+<TextBlock Text="each S-box is actually 4 little 4 bit boxes" />
+<TextBlock Text="outer bits 1 &amp; 6 (row bits) select one row of 4" />
+<TextBlock Text="inner bits 2-5 (col bits) are substituted" />
+<TextBlock Text="result is 8 lots of 4 bits, or 32 bits" />
+<TextBlock Text="row selection depends on both data &amp; key" />
+<TextBlock Text="feature known as autoclaving (autokeying)" />
+<TextBlock Text="example:" />
+<TextBlock Text="S(18 09 12 3d 11 17 38 39) = 5fd25e03" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Add Round Key" Style="{StaticResource Heading1}" />
+				<TextBlock Text="-XOR state with 128-bits of the round key" />
+<TextBlock Text="-again processed by column (though effectively" />
+<TextBlock Text="a series of byte operations)" />
+<TextBlock Text="-inverse for decryption identical" />
+<TextBlock Text="-since XOR own inverse, with reversed keys" />
+<TextBlock Text="-designed to be as simple as possible" />
+<TextBlock Text="-a form of Vernam cipher on expanded key" />
+<TextBlock Text="-requires other stages for complexity / security" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

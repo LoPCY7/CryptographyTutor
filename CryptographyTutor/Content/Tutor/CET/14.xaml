@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Monoalphabetic Cipher" Style="{StaticResource Heading1}" />
+				<TextBlock Text="rather than just shifting the alphabet" />
+<TextBlock Text="• could shuffle (jumble) the letters arbitrarily" />
+<TextBlock Text="• each plaintext letter maps to a different random" />
+<TextBlock Text="ciphertext letter" />
+<TextBlock Text="• hence key is 26 letters long" />
+<TextBlock Text="Plain: abcdefghijklmnopqrstuvwxyz" />
+<TextBlock Text="Cipher: DKVQFIBJWPESCXHTMYAUOLRGZN" />
+<TextBlock Text="Plaintext: ifwewishtoreplaceletters" />
+<TextBlock Text="Ciphertext: WIRFRWAJUHYFTSDVFSFUUFYA" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

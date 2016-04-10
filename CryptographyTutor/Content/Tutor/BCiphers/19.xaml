@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Strength of DES – Timing Attacks" Style="{StaticResource Heading1}" />
+				<TextBlock Text="attacks actual implementation of cipher" />
+<TextBlock Text="use knowledge of consequences of" />
+<TextBlock Text="implementation to derive information about" />
+<TextBlock Text="some/all subkey bits" />
+<TextBlock Text="specifically use fact that calculations can take" />
+<TextBlock Text="varying times depending on the value of the" />
+<TextBlock Text="inputs to it" />
+<TextBlock Text="particularly problematic on smartcards" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

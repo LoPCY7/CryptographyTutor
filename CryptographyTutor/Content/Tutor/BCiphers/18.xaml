@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Strength of DES – Analytic Attacks" Style="{StaticResource Heading1}" />
+				<TextBlock Text="now have several analytic attacks on DES" />
+<TextBlock Text="these utilise some deep structure of the cipher" />
+<TextBlock Text="by gathering information about encryptions" />
+<TextBlock Text="can eventually recover some/all of the sub‐key bits" />
+<TextBlock Text="if necessary then exhaustively search for the rest" />
+<TextBlock Text="generally these are statistical attacks" />
+<TextBlock Text="differential cryptanalysis" />
+<TextBlock Text="linear cryptanalysis" />
+<TextBlock Text="related key attacks" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

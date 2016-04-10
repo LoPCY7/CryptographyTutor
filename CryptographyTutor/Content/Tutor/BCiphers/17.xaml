@@ -9,7 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Introduction" Style="{StaticResource Heading1}" />
+                <TextBlock Text="Strength of DES-Key Size" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• 56‐bit keys have 256 = 7.2 x 1016 values" />
+<TextBlock Text="• brute force search looks hard" />
+<TextBlock Text="• recent advances have shown is possible" />
+<TextBlock Text="– in 1997 on Internet in a few months" />
+<TextBlock Text="– in 1998 on dedicated h/w (EFF) in a few days" />
+<TextBlock Text="– in 1999 above combined in 22hrs!" />
+<TextBlock Text="• still must be able to recognize plaintext" />
+<TextBlock Text="• must now consider alternatives to DES" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

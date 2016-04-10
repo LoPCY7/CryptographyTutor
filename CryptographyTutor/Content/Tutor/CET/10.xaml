@@ -9,8 +9,11 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Brute Force Search" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• always possible to simply try every key" />
+<TextBlock Text="• most basic attack, proportional to key size" />
+<TextBlock Text="• assume either know / recognise plaintext" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

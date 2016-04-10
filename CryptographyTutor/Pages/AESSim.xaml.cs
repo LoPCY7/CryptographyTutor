@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Security.Cryptography;
 using System.IO;
+using CryptographyTutor.CMethods;
 
 namespace CryptographyTutor.Pages
 {
@@ -27,12 +28,10 @@ namespace CryptographyTutor.Pages
         public AESSim()
         {
             InitializeComponent();
-            rbtnEncryption.IsChecked = true;
-            txtKey.Mask = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
         }
 
         /* PKCS5/PKCS7 compliant padding */
-     /*   private static byte[] appendPadding(byte[] data)
+        private byte[] appendPadding(byte[] data)
         {
 
             int cnt = data.Length;
@@ -43,12 +42,12 @@ namespace CryptographyTutor.Pages
             for (int i = 0; i < paddedLenght; i++)
                 res[i] = (i < cnt) ? data[i] : (byte)paddingLenght;
 
-            System.Console.WriteLine("paddedLenght=" + paddingLenght);
+            txtProcessed.Text = txtProcessed + ("\npaddedLenght=" + paddingLenght + "\n");
             DisplayAsBytes(res);
             return res;
         }
 
-        private static byte[] removePadding(byte[] paddedData)
+        private byte[] removePadding(byte[] paddedData)
         {
 
             int paddedLength = paddedData.Length;
@@ -68,7 +67,7 @@ namespace CryptographyTutor.Pages
                 res[i] = paddedData[i];
 
             return res;
-        }*/
+        }
 
 
         /*
@@ -141,16 +140,74 @@ namespace CryptographyTutor.Pages
             return (System.Text.Encoding.UTF8.GetString(planeText));
         }
         */
-        private string encrypt(string inputText, string AESKey, string AESIV)
+        private byte[] encryptECB(byte[] input, byte[] key)
         {
+            AESClass a = new AESClass(AESClass.KeySize.b256, key);
+            input = appendPadding(input);
+            byte[] res;
+            int counter = input.Length;
+            int countBlocks = 0;
+            byte[] tempArray;
+            List<byte> myList = new List<byte>();
+            while (counter > 0)
+            {
+                res = new byte[input.Length];
+                tempArray = new byte[16];
+                for (int i=0;i<16;i++)
+                {
+                    tempArray[i] = input[(countBlocks*16) + i];
+                }
+                a.Cipher(tempArray, res);
+                counter -= 16;
+                countBlocks += 1;
+                for (int i = 0; i < tempArray.Length; i++)
+                    myList.Add(res[i]);
+            }
+            byte[] finalResult = new byte[myList.Count];
+            for (int i=0;i<finalResult.Length;i++)
+            {
+                finalResult[i] = myList[i];
+            }
+            return finalResult;
+        }
 
-            return null;
+        private byte[] decryptECB(byte[] input, byte[] key)
+        {
+            AESClass a = new AESClass(AESClass.KeySize.b256, key);
+            byte[] res;
+            int counter = input.Length;
+            int countBlocks = 0;
+            byte[] tempArray;
+            List<byte> myList = new List<byte>();
+            while (counter > 0)
+            {
+                res = new byte[input.Length];
+                tempArray = new byte[16];
+                for (int i = 0; i < 16; i++)
+                {
+                    tempArray[i] = input[(countBlocks * 16) + i];
+                }
+                a.InvCipher(tempArray, res);
+                res = removePadding(res);
+                counter -= 16;
+                countBlocks += 1;
+                for (int i = 0; i < res.Length; i++)
+                    myList.Add(res[i]);
+            }
+            byte[] finalResult = new byte[myList.Count];
+            for (int i = 0; i < finalResult.Length; i++)
+            {
+                finalResult[i] = myList[i];
+            }
+            
+            return finalResult;
         }
         private void btnProcess_Click(object sender, RoutedEventArgs e)
         {
+            /*
             if (rbtnEncryption.IsChecked == true)
             {
-                txtProcessed.Text = encrypt(txtInput.Text, txtKey.Text, txtIV.Text);
+                //txtProcessed.Text = encrypt(txtInput.Text, txtKey.Text, txtIV.Text);
                 if (chbExpMode.IsChecked == true)
                 {
                     AESSlideshow aesSlide = new AESSlideshow();
@@ -160,7 +217,36 @@ namespace CryptographyTutor.Pages
             else
        //         txtProcessed.Text = decrypt(txtInput.Text, txtKey.Text, txtIV.Text);
             if (chbExport.IsChecked == true)
-                exportToText();
+                exportToText();*/
+            string plain = txtInput.Text;
+            byte[] plainText = System.Text.Encoding.UTF8.GetBytes(plain);
+
+            txtProcessed.Text = "\nThe plaintext is: ";
+            DisplayAsBytes(plainText);
+            txtProcessed.Text = txtProcessed.Text + "\n" + (byte2Hex(plainText));
+
+            byte[] cipherText;
+            byte[] decipheredText;
+            byte[] keyBytes = hex2Byte("b7a08f20cdd82d5625f5504f9cf6053240f742c0cee6e057f8065e8877dc9bee");
+
+            txtProcessed.Text = txtProcessed.Text + ("\nUsing a " + AESClass.KeySize.b256.ToString() + "-key of: ");
+            DisplayAsBytes(keyBytes);
+            txtProcessed.Text = txtProcessed.Text + "\n" + (byte2Hex(keyBytes));
+
+            cipherText = encryptECB(plainText, keyBytes);
+
+            txtProcessed.Text = txtProcessed.Text + ("\nThe resulting ciphertext is: ");
+            DisplayAsBytes(cipherText);
+            txtProcessed.Text = txtProcessed.Text + "\n" + (byte2Hex(cipherText));
+
+            decipheredText = decryptECB(cipherText, keyBytes);
+
+            txtProcessed.Text = txtProcessed.Text + ("\nAfter deciphering the ciphertext, the result is: ");
+            DisplayAsBytes(decipheredText);
+            txtProcessed.Text = txtProcessed.Text + "\n" + (byte2Hex(decipheredText));
+            txtProcessed.Text = txtProcessed.Text + "\n" + (System.Text.Encoding.UTF7.GetString(decipheredText));
+
+            txtProcessed.Text = txtProcessed.Text + ("\nDone");
         }
 
         private void exportToText()
@@ -224,20 +310,43 @@ namespace CryptographyTutor.Pages
 
         private void rbtnECB_Checked(object sender, RoutedEventArgs e)
         {
-            txtIV.IsEnabled = false;
         }
 
         private void rbtn128_Checked(object sender, RoutedEventArgs e)
         {
-            txtKey.Mask = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
         }
         private void rbtn192_Checked(object sender, RoutedEventArgs e)
         {
-            txtKey.Mask = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
         }
         private void rbtn256_Checked(object sender, RoutedEventArgs e)
         {
-            txtKey.Mask = "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&";
+        }
+
+        private string byte2Hex(byte[] bytes)
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder(bytes.Length * 2);
+            foreach (byte b in bytes)
+                sb.AppendFormat("{0:x2}", b);
+            return sb.ToString();
+        }
+
+        public byte[] hex2Byte(string hexString)
+        {
+            int n = hexString.Length;
+            byte[] bytes = new byte[n / 2];
+            for (int i = 0; i < n; i += 2)
+                bytes[i / 2] = System.Convert.ToByte(hexString.Substring(i, 2), 16);
+            return bytes;
+        }
+
+        private void DisplayAsBytes(byte[] bytes)
+        {
+            for (int i = 0; i < bytes.Length; ++i)
+            {
+                txtProcessed.Text = txtProcessed.Text + (bytes[i].ToString("x2") + " ");
+                if (i > 0 && i % 16 == 0) txtProcessed.Text = txtProcessed.Text + "\n";
+            }
+            txtProcessed.Text = txtProcessed.Text + "\n";
         }
     }
 }

@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Language Redundancy and Cryptanalysis" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text=" human languages are redundant" />
+<TextBlock Text=" eg &quot;th lrd s m shphrd shll nt wnt&quot;" />
+<TextBlock Text=" letters are not equally commonly used" />
+<TextBlock Text="in English E is by far the most common letter" />
+<TextBlock Text=" followed by T,R,N,I,O,A,S" />
+<TextBlock Text=" other letters like Z,J,K,Q,X are fairly rare" />
+                <TextBlock Text=" have tables of single, double &amp;  triple letter" />
+<TextBlock Text="frequencies for various languages" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

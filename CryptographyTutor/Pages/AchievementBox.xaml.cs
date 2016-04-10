@@ -29,7 +29,7 @@ namespace CryptographyTutor.Pages
         private void setText(string name, string description, string score)
         {
             txtName.Text = name;
-            txtDescription.Text = description;
+            txtDescription.BBCode = "[i]"+description+"[/i]";
             txtScore.Text = "Score: " + score;
         }
     }

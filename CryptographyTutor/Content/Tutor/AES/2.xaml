@@ -9,8 +9,11 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="AES" Style="{StaticResource Heading2}" />
+                <TextBlock Text="It seems very simple." />
+                <TextBlock Text="It is very simple. But if you don't know what the" />
+                <TextBlock Text="key is it's virtually indecipherable." />
+                <TextBlock Text="—Talking to Strange Men, Ruth Rendell"  FontWeight="Bold"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

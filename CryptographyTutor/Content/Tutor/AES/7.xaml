@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Some Comments on AES" Style="{StaticResource Heading2}" />
+                <TextBlock Text="It is an iterative cipher" />
+				<TextBlock Text="The key is expanded into an array of 32-bit words" />
+				<TextBlock Text="The round key is formed by four words in each round" />
+				<TextBlock Text="Only the AddRoundKey stage uses the key" />
+				<TextBlock Text="Each stage is easily reversible" />
+				<TextBlock Text="-decryption uses keys in reverse order" />
+				<TextBlock Text="-decryption recovers plaintext" />
+				<TextBlock Text="Final round has only 3 stages" />
             </StackPanel>
         </ScrollViewer>
     </Grid>

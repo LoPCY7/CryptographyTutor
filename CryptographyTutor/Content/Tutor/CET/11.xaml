@@ -9,8 +9,14 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Classical Substitution Ciphers" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="where letters of plaintext are replaced by" />
+<TextBlock Text="other letters or by numbers or symbols" />
+<TextBlock Text="• or if plaintext is viewed as a sequence of bits," />
+<TextBlock Text="then substitution involves replacing plaintext" />
+<TextBlock Text="bit patterns with ciphertext bit patterns" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

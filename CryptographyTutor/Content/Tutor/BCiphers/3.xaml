@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Block Cipher Principles" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• most symmetric block ciphers are based on a Feistel" />
+<TextBlock Text="Cipher Structure" />
+<TextBlock Text="• needed since must be able to decrypt ciphertext to" />
+<TextBlock Text="recover messages efficiently" />
+<TextBlock Text="• block ciphers look like an extremely large" />
+<TextBlock Text="substitution" />
+<TextBlock Text="• would need table of 264 entries for a 64‐bit block" />
+<TextBlock Text="• instead create from smaller building blocks" />
+<TextBlock Text="• using idea of a product cipher" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

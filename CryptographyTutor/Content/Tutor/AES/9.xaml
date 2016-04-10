@@ -9,8 +9,7 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Substitute Bytes Example" Style="{StaticResource Heading2}" />
             </StackPanel>
         </ScrollViewer>
     </Grid>

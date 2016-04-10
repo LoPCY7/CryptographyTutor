@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Security Services" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <TextBlock Text="Authentication is a process to assurance that the communicating entity is the one claimed" FontSize="18" TextWrapping="Wrap" />
+                <TextBlock Text="authentication occurs for both peer-entity &amp; data origin" />
+                <TextBlock Text="Access Control: prevention of the unauthorized use of a resource"/>
+                <TextBlock Text="Data Confidentiality : the protection of data from unauthorized access"/>
+                <TextBlock Text="Data Integrity: the assurance that data received is as sent by an authorized entity"/>
+                <TextBlock Text="Non-Repudiation: the protection against the denial by one of the parties in a communication"/>
+                <TextBlock Text="Availability: resource accessibility/usability"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

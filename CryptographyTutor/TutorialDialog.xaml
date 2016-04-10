@@ -6,19 +6,27 @@
                   xmlns:mui="http://firstfloorsoftware.com/ModernUI"
                   mc:Ignorable="d" 
                   d:DesignHeight="450" d:DesignWidth="700"
-                  Title="ModernDialog">
+                  Title="Tutorial"
+                  Style="{StaticResource BlankWindow}"
+                  WindowStartupLocation="CenterScreen">
 
     <!-- Note: ModernDialog buttons are defined in the constructor of the code behind class -->
     <ScrollViewer>
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,0,8" Height="400" Width="650">
-                <mui:ModernButton IconData="{StaticResource HomeIconData}" Margin="0,0,0,8"  HorizontalAlignment="Left"/>
-                <mui:ModernButton IconData="{StaticResource HomeIconData}" Margin="0,0,0,8" HorizontalAlignment="Right"/>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,0,8" Height="500" Width="650" Style="{StaticResource ContentRoot}">
+            <TextBlock Text="Tips" Style="{StaticResource Heading1}" Margin="0,0,0,8" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <mui:ModernButton Name="btnPrevious" Margin="0,0,0,8"  HorizontalAlignment="Left" EllipseDiameter="32" IconWidth="20" IconHeight="20" IconData="F1 M 57,42L 57,34L 32.25,34L 42.25,24L 31.75,24L 17.75,38L 31.75,52L 42.25,52L 32.25,42L 57,42 Z " Click="btnPrevious_Click"/>
+            <mui:ModernButton Name="btnNext" Margin="0,0,0,8" HorizontalAlignment="Right" EllipseDiameter="32" IconWidth="20" IconHeight="20" IconData="F1 M 19.0002,34L 19.0002,42L 43.7502,42L 33.7502,52L 44.2502,52L 58.2502,38L 44.2502,24L 33.7502,24L 43.7502,34L 19.0002,34 Z" Click="btnNext_Click"/>
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,8" VerticalAlignment="Center">
+                <Image Name="tutorialImage" HorizontalAlignment="Center" Width="550" Height="350"/>
+                <TextBlock Name="txtTutorial"/>
+            </StackPanel>
             <StackPanel VerticalAlignment="Bottom">
                 <StackPanel HorizontalAlignment="Left" Margin="0,0,0,8">
                     <CheckBox Content="Don't show again" Name="chbDisableTips"/>
                 </StackPanel>
-                <StackPanel HorizontalAlignment="Center" Margin="0,0,0,8">
-                    <Button Content="Close"/>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,-30">
+                    <Button Content="Close" Name="btnClose" Click="btnClose_Click"/>
                 </StackPanel>
             </StackPanel>
         </Grid>

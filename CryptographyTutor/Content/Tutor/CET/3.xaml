@@ -9,8 +9,13 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Symmetric Encryption" Style="{StaticResource Heading2}" />
+				<TextBlock Text="Also known as conventional / private-key / single-key"/>
+<TextBlock Text="sender and recipient share a common key"/>
+<TextBlock Text="all classical encryption algorithms are private key"/>
+<TextBlock Text="was the only type prior to invention of public-key in 1970’s"/>
+<TextBlock Text="and by far the most widely used"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

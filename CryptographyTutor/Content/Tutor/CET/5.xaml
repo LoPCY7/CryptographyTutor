@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Requirements" Style="{StaticResource Heading1}" />
+				<TextBlock Text="There are two requirements for secure use of symmetric encryption:"/>
+<TextBlock Text="a strong encryption algorithm"/>
+<TextBlock Text="a secret key known only to sender / receiver"/>
+<TextBlock Text="Mathematically have:"/>
+<TextBlock Text="Y = E(K, X)"/>
+<TextBlock Text="X = D(K, Y)"/>
+<TextBlock Text="assume encryption algorithm is known"/>
+<TextBlock Text="implies a secure channel to distribute key"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

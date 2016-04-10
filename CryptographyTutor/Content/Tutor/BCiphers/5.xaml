@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Data Encryption Standard (DES)" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• most widely used block cipher in world" />
+<TextBlock Text="• adopted in 1977 by NBS (now NIST)" />
+<TextBlock Text="– as FIPS PUB 46" />
+<TextBlock Text="• encrypts 64-bit data using 56‐bit key" />
+<TextBlock Text="• has widespread use" />
+<TextBlock Text="• has been considerable controversy over its" />
+<TextBlock Text="security" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

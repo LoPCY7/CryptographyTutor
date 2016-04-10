@@ -8,8 +8,12 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer HorizontalScrollBarVisibility="Auto">
-            <StackPanel HorizontalAlignment="Left">
+            <StackPanel>
                 <TextBlock Text="Presentations" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
+                <TextBlock Text="Unlocked Presentations:" Style="{StaticResource Heading2}" Margin="0,0,0,8" />
+                <StackPanel HorizontalAlignment="Left">
+                    <ListBox x:Name="presentationsList" Height="500" Width="650"/>
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
     </Grid>

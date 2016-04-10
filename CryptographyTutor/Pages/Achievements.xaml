@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer HorizontalScrollBarVisibility="Auto">
-            <StackPanel HorizontalAlignment="Left">
+            <StackPanel>
                 <TextBlock Text="Achievements" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
                 <StackPanel HorizontalAlignment="Left">
                     <ListBox x:Name="achievementsList" Height="500" Width="650"/>

@@ -9,8 +9,18 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Mix Columns" Style="{StaticResource Heading1}" />
+				<TextBlock Text="can express each col as 4 equations" />
+<TextBlock Text="– to derive each new byte in col" />
+<TextBlock Text="• decryption requires use of inverse matrix" />
+<TextBlock Text="– with larger coefficients, hence a little harder" />
+<TextBlock Text="• have an alternate characterisation" />
+<TextBlock Text="– each column a 4-term polynomial" />
+<TextBlock Text="– with coefficients in GF(28)" />
+<TextBlock Text="– and polynomials multiplied modulo (x4+1)" />
+<TextBlock Text="• coefficients based on linear code with" />
+<TextBlock Text="maximal distance between codewords" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

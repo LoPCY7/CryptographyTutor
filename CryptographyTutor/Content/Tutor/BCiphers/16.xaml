@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Avalanche Effect" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="key desirable property of encryption alg" />
+<TextBlock Text="• where a change of one input or key bit results" />
+<TextBlock Text="in changing approx half output bits" />
+<TextBlock Text="• making attempts to “home-in” by guessing" />
+<TextBlock Text="keys impossible" />
+<TextBlock Text="• DES exhibits strong avalanche" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

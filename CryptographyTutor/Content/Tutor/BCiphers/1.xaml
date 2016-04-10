@@ -9,7 +9,7 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Introduction" Style="{StaticResource Heading1}" />
+                <TextBlock Text="Block Ciphers" Style="{StaticResource Heading1}" />
             </StackPanel>
         </ScrollViewer>
     </Grid>

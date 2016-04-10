@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="One-Time Pad" Style="{StaticResource Heading1}" />
+				<TextBlock Text="if a truly random key as long as the message is used," />
+<TextBlock Text="the cipher will be secure" />
+<TextBlock Text="• called a One-Time pad" />
+<TextBlock Text="• is unbreakable since ciphertext bears no statistical" />
+<TextBlock Text="relationship to the plaintext" />
+                <TextBlock Text="• since for any plaintext &amp;  any ciphertext there exists" />
+<TextBlock Text="a key mapping one to other" />
+<TextBlock Text="• can only use the key once though" />
+                <TextBlock Text="• problems in generation &amp;  safe distribution of key" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,18 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Substitute Bytes" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• a simple substitution of each byte" />
+<TextBlock Text="• uses one table of 16x16 bytes containing a" />
+<TextBlock Text="permutation of all 256 8-bit values" />
+<TextBlock Text="• each byte of state is replaced by byte indexed by row" />
+<TextBlock Text="(left 4-bits) &amp; column (right 4-bits)" />
+<TextBlock Text="– eg. byte {95} is replaced by byte in row 9 column 5" />
+<TextBlock Text="– which has value {2A}" />
+<TextBlock Text="• S-box constructed using defined transformation of" />
+<TextBlock Text="values in GF(28)" />
+<TextBlock Text="• designed to be resistant to all known attacks" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

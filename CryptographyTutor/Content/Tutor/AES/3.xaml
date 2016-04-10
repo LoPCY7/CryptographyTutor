@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Origins" Style="{StaticResource Heading2}" />
+                <TextBlock Text="AES was created as a replacement for DES, as DES:" />
+				<TextBlock Text="– has theoretical attacks that can break it" />
+				<TextBlock Text="– has demonstrated exhaustive key search attacks" />
+				<TextBlock Text="Triple DES can be used, but it is slow and it has small blocks" />
+				<TextBlock/>
+				<TextBlock Text="US NIST issued call for ciphers in 1997"/>
+				<TextBlock Text="-in June 1998, 15 candidates accepted"/>
+				<TextBlock Text="-in August 1998, 5 of those candidates were shortlisted"/>
+				<TextBlock Text="-in October 2000, Rijndael Algorithm was selected as the AES"/>
+				<TextBlock Text="-in November 2001, AES was issued as FIPS PUB 197 standard"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

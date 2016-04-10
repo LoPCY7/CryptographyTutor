@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="DES Key Schedule" Style="{StaticResource Heading1}" />
+				<TextBlock Text="forms subkeys used in each round" />
+<TextBlock Text="initial permutation of the key (PC1) which selects" />
+<TextBlock Text="56-bits in two 28-bit halves" />
+<TextBlock Text="-16 stages consisting of:" />
+<TextBlock Text="• rotating each half separately either 1 or 2 places" />
+<TextBlock Text="depending on the key rotation schedule K" />
+<TextBlock Text="• selecting 24-bits from each half &amp; permuting them by" />
+<TextBlock Text="PC2 for use in round function F" />
+<TextBlock Text="-note practical use issues in h/w vs s/w" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

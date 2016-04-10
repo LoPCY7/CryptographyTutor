@@ -9,8 +9,11 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Level of Impact" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
+                <TextBlock Text="Three levels of impact can be defined for a security breach:" TextWrapping="Wrap" Width="480" FontSize="18"/>
+                <TextBlock Text="•Low" TextWrapping="Wrap" FontSize="16"/>
+                <TextBlock Text="•Moderate" TextWrapping="Wrap" FontSize="16" />
+                <TextBlock Text="•High" TextWrapping="Wrap" FontSize="16"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

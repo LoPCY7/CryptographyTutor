@@ -29,6 +29,9 @@ namespace CryptographyTutor.Content
         {
             AppearanceManager.Current.AccentColor = Color.FromRgb(0xe5, 0x14, 0x00);
             AppearanceManager.Current.ThemeSource = AppearanceManager.DarkThemeSource;
+            //AppearanceManager.Current.FontSize = FirstFloor.ModernUI.Presentation.FontSize.Large;
+            //MessageBox.Show();
+            //MessageBox.Show(AppearanceManager.Current.ThemeSource.ToString());
         }
     }
 }

@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Aspects of Security" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+				<TextBlock Text="Consider 3 aspects of information security:" FontSize="18"/>
+                <TextBlock Text="•Security attacks" FontSize="16"/>
+				<TextBlock Text="•Security mechanisms" FontSize="16"/>
+				<TextBlock Text="•Security services" FontSize="16"/>
+				<TextBlock/>
+				<TextBlock Text="Note the terms:" FontSize="18"/>
+				<TextBlock Text="•Thread: a potential of violation of security" FontSize="16"/>
+				<TextBlock Text="•Attack: an assault on system security, a deliberate attempt to evade security services" FontSize="16"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

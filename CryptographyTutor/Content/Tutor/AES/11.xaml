@@ -9,8 +9,13 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Mix Columns" Style="{StaticResource Heading1}" />
+				<TextBlock Text="each column is processed separately" />
+<TextBlock Text="• each byte is replaced by a value dependent on" />
+<TextBlock Text="all 4 bytes in the column" />
+<TextBlock Text="• effectively a matrix multiplication in GF(28)" />
+<TextBlock Text="using prime poly m(x) =x8+x4+x3+x+1" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

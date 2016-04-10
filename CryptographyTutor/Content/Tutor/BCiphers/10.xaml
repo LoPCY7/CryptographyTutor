@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="DES Round Structure" Style="{StaticResource Heading1}" />
+				<TextBlock Text="uses two 32-bit L &amp; R halves" />
+<TextBlock Text="• as for any Feistel cipher can describe as:" />
+<TextBlock Text="Li = Ri–1" />
+<TextBlock Text="Ri = Li 1 Li- F(Ri 1 Ki)" />
+<TextBlock Text="Ri–1, • F takes 32-bit R half and 48-bit subkey:" />
+<TextBlock Text="– expands R to 48-bits using perm E" />
+<TextBlock Text="– adds to subkey using XOR" />
+<TextBlock Text="– passes through 8 S-boxes to get 32-bit result" />
+<TextBlock Text="– finally permutes using 32-bit perm P" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="The AES Cipher - Rijndael" Style="{StaticResource Heading2}" />
+                <TextBlock Text="It was designed by Rijmen-Daemen in Belgium" />
+                <TextBlock Text="-it uses 128/192/256 bit keys" />
+                <TextBlock Text="-it processes data as block of 4 columns of 4 bytes" />
+                <TextBlock Text="-it operates on entire data block in every round" />
+                <TextBlock/>
+                <TextBlock Text="AES was designed to be:" />
+                <TextBlock Text="-resistant against known attacks" />
+                <TextBlock Text="-fast and code compact in order to work on many CPUs" />
+                <TextBlock Text="-simple by design" />
             </StackPanel>
         </ScrollViewer>
     </Grid>

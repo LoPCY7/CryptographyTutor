@@ -5,7 +5,7 @@
                   xmlns:app="clr-namespace:CryptographyTutor"
                   Title="Cryptography Tutor" IsTitleVisible="True"
                   WindowStartupLocation="CenterScreen"
-                  ContentSource="/Pages/Introduction.xaml"
+                  ContentSource="/Pages/Profile.xaml"
                   Width="800" Height="700"
                   KeyDown="Window_KeyDown">
 
@@ -13,49 +13,47 @@
             <mui:Link DisplayName="Settings" Source="/Pages/Settings.xaml" />
         </mui:ModernWindow.TitleLinks>
 
-        <mui:ModernWindow.MenuLinkGroups>
-            <mui:LinkGroup DisplayName="Welcome">
-                <mui:LinkGroup.Links>
-                    <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
-                </mui:LinkGroup.Links>
-            </mui:LinkGroup>
+    <mui:ModernWindow.MenuLinkGroups>
 
-            <mui:LinkGroup DisplayName="Profile">
-                <mui:LinkGroup.Links>
-                    <mui:Link DisplayName="Main" Source="/Pages/Introduction.xaml" />
-                </mui:LinkGroup.Links>
-            </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Profile">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Main" Source="/Pages/Profile.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
 
-            <mui:LinkGroup DisplayName="Tutor">
+        <mui:LinkGroup DisplayName="Tutor">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Tutor/Introduction.xaml" />
                 <mui:Link DisplayName="Classical Encryption Techniques" Source="/Pages/Tutor/CET.xaml" />
                 <mui:Link DisplayName="Block Ciphers" Source="/Pages/Tutor/BCiphers.xaml" />
                 <mui:Link DisplayName="AES" Source="/Pages/Tutor/AES.xaml" />
-                <mui:Link DisplayName="Brute Force" Source="/Pages/Tutor/BruteForce.xaml" />
+                <!--<mui:Link DisplayName="Brute Force" Source="/Pages/Tutor/BruteForce.xaml" />-->
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Encryption">
             <mui:LinkGroup.Links>
-               <!--<mui:Link DisplayName="DES" Source="/Pages/EncryptionDES.xaml" />-->
-                <mui:Link DisplayName="AES" Source="/Pages/AESSim.xaml" />
+                <!--<mui:Link DisplayName="DES" Source="/Pages/EncryptionDES.xaml" />-->
+                <mui:Link DisplayName="AES Simulator" Source="/Pages/AESSim.xaml" />
+                <mui:Link DisplayName="AES Simulator2" Source="/Pages/AESSim2.xaml" />
+                <mui:Link DisplayName="AES Inspector" Source="/Pages/AESInspector.xaml" />
+                <mui:Link DisplayName="AES Animation" Source="/Pages/AESAnimation.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Brute Force">
-                <mui:LinkGroup.Links>
+            <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Main" Source="/Pages/BruteForce.xaml" />
-                </mui:LinkGroup.Links>
-            </mui:LinkGroup>
-            <mui:LinkGroup DisplayName="Other">
-                <mui:LinkGroup.Links>
-                    <mui:Link DisplayName="Presentations" Source="/Pages/Presentations.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Other">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Presentations" Source="/Pages/Presentations.xaml" />
                 <mui:Link DisplayName="Achievements" Source="/Pages/Achievements.xaml" />
-                </mui:LinkGroup.Links>
-            </mui:LinkGroup>
-            <mui:LinkGroup DisplayName="Settings" GroupKey="settings">
-                <mui:LinkGroup.Links>
-                    <mui:Link DisplayName="Software" Source="/Pages/Settings.xaml" />
-                </mui:LinkGroup.Links>
-            </mui:LinkGroup>
-        </mui:ModernWindow.MenuLinkGroups>
-    </mui:ModernWindow>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Software" Source="/Pages/Settings.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+</mui:ModernWindow>

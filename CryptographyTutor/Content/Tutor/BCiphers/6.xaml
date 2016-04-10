@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="DES History" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• IBM developed Lucifer cipher" />
+<TextBlock Text="– by team led by Feistel in late 60’s" />
+<TextBlock Text="– used 64-bit data blocks with 128-bit key" />
+<TextBlock Text="• then redeveloped as a commercial cipher with" />
+<TextBlock Text="input from NSA and others" />
+<TextBlock Text="• in 1973 NBS issued request for proposals for a" />
+<TextBlock Text="national cipher standard" />
+<TextBlock Text="• IBM submitted their revised Lucifer which was" />
+<TextBlock Text="eventually accepted as the DES" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,15 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="AES Arithmetic" Style="{StaticResource Heading1}" />
+				<TextBlock Text="uses arithmetic in the finite field GF(28)" />
+<TextBlock Text="• with irreducible polynomial" />
+<TextBlock Text="m(x) = x8 + x4 + x3 + x + 1" />
+<TextBlock Text="which is (100011011) or {11b}" />
+<TextBlock Text="• e.g." />
+                <TextBlock Text="• {02} • {87} mod {11b} = (1 0000 1110) mod {11b}" />
+<TextBlock Text="= (1 0000 1110) xor (1 0001 1011) = (0001 0101)" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

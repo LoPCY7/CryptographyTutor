@@ -9,8 +9,14 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Cryptanalysis" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="• objective to recover key not just message"/>
+<TextBlock Text="• general approaches:"/>
+<TextBlock Text="– cryptanalytic attack"/>
+<TextBlock Text="– brute-force attack"/>
+<TextBlock Text="• if either succeed all key use compromised"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

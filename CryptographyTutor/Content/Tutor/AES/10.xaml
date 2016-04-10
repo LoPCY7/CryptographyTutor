@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Shift Rows" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• a circular byte shift" />
+<TextBlock Text="– 1st row is unchanged" />
+<TextBlock Text="– 2nd row does 1 byte circular shift to left" />
+<TextBlock Text="– 3rd row does 2 byte circular shift to left" />
+<TextBlock Text="– 4th row does 3 byte circular shift to left" />
+<TextBlock Text="• decrypt inverts using shifts to right" />
+<TextBlock Text="• since state is processed by columns, this step" />
+<TextBlock Text="permutes bytes between the columns" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

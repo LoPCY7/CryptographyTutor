@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="DES Design Controversy" Style="{StaticResource Heading1}" />
+				<TextBlock Text="although DES standard is public" />
+<TextBlock Text="• was considerable controversy over design" />
+<TextBlock Text="– in choice of 56-bit key (vs Lucifer 128-bit)" />
+<TextBlock Text="– and because design criteria were classified" />
+<TextBlock Text="• subsequent events and public analysis show in" />
+<TextBlock Text="fact design was appropriate" />
+<TextBlock Text="• use of DES has flourished" />
+<TextBlock Text="– especially in financial applications" />
+<TextBlock Text="– still standardised for legacy application use" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

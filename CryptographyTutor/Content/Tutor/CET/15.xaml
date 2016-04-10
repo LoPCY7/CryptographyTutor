@@ -9,8 +9,12 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Monoalphabetic Cipher Security" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• now have a total of 26! = 4 x 1026 keys" />
+<TextBlock Text="• with so many keys, might think is secure" />
+<TextBlock Text="• but would be !!!WRONG!!!" />
+<TextBlock Text="• problem is language characteristics" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

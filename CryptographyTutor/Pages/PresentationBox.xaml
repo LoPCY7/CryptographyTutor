@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="CryptographyTutor.Pages.PresentationBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:content="clr-namespace:CryptographyTutor.Pages"
+             mc:Ignorable="d" >
+    <StackPanel Height="100" Width="600">
+        <Grid>
+            <Image HorizontalAlignment="Left" Width="100" Name="presentationIcon" Height="100"/>
+            <StackPanel HorizontalAlignment="Right" Width="450">
+                <TextBlock FontWeight="Bold" FontSize="24" Text="Name" Margin="0,0,0,16" Name="txtName"/>
+                <Button Content="Open Presentation" Width="150" Height="35" HorizontalAlignment="Center" Name="btnOpenPresentation" Click="btnOpenPresentation_Click"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>

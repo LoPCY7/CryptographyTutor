@@ -9,8 +9,18 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="More Definitions" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="unconditional security" />
+<TextBlock Text="no matter how much computer power or time is" />
+<TextBlock Text="available, the cipher cannot be broken since the" />
+<TextBlock Text="ciphertext provides insufficient information to" />
+<TextBlock Text="uniquely determine the corresponding plaintext" />
+<TextBlock Text="computational security" />
+<TextBlock Text="given limited computing resources (eg time" />
+<TextBlock Text="needed for calculations is greater than age of" />
+<TextBlock Text="universe), the cipher cannot be broken" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

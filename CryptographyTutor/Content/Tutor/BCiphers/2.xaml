@@ -9,8 +9,14 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Modern Block Ciphers" Style="{StaticResource Heading1}" />
+				<TextBlock Text="-now look at modern block ciphers" />
+<TextBlock Text="-one of the most widely used types of" />
+<TextBlock Text="cryptographic algorithms" />
+<TextBlock Text="-provide secrecy /authentication services" />
+<TextBlock Text="-focus on DES (Data Encryption Standard)" />
+<TextBlock Text="-to illustrate block cipher design principles" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Cryptanalysis of Caesar Cipher" Style="{StaticResource Heading1}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="only have 26 possible ciphers" />
+<TextBlock Text="A maps to A,B,..Z" />
+<TextBlock Text="could simply try each in turn" />
+<TextBlock Text="a brute force search" />
+<TextBlock Text="given ciphertext, just try all shifts of letters" />
+<TextBlock Text="do need to recognize when have plaintext" />
+                <TextBlock Text="eg. break ciphertext &quot;GCUA VQ DTGCM&quot;" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,19 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Cryptography" Style="{StaticResource Heading1}" />
+                <TextBlock Text="• can characterize cryptographic system by:"/>
+<TextBlock Text="– type of encryption operations used"/>
+<TextBlock Text="• substitution"/>
+<TextBlock Text="• transposition"/>
+<TextBlock Text="• product"/>
+<TextBlock Text="– number of keys used"/>
+<TextBlock Text="• single-key or private"/>
+<TextBlock Text="• two-key or public"/>
+<TextBlock Text="– way in which plaintext is processed"/>
+<TextBlock Text="• block"/>
+<TextBlock Text="• stream"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

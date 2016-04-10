@@ -4,42 +4,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-             xmlns:content="clr-namespace:CryptographyTutor.Content"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
-            <StackPanel>
-                <Grid HorizontalAlignment="Left" MinWidth="400">
-                    <StackPanel HorizontalAlignment="Left">
-                        <TextBlock Text="Encryption Method:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
-                        <ListBox Margin="0,0,0,32">
-                            <ListBoxItem Content="AES 128bit"/>
-                            <ListBoxItem Content="AES 192bit"/>
-                            <ListBoxItem Content="AES 256bit"/>
-                            <ListBoxItem Content="SHA-1+AES 128bit"/>
-                            <ListBoxItem Content="SHA-256+AES 192bit"/>
-                            <ListBoxItem Content="SHA-256+AES 256bit"/>
-                            <ListBoxItem Content="DES"/>
-                            <ListBoxItem Content="Triple DES"/>
-                            <ListBoxItem Content="Blowfish"/>
-                        </ListBox>
+            <StackPanel MinWidth="200">
+                    <TextBlock Text="Brute Force" Style="{StaticResource Heading1}" />
+                <StackPanel  Margin="0,0,0,8">
+                        <TextBlock Text="Encryption Method:"/>
+                        <ComboBox Margin="0,0,0,8">
+                            <ComboBoxItem Content="AES 128bit"/>
+                            <ComboBoxItem Content="AES 192bit"/>
+                            <ComboBoxItem Content="AES 256bit"/>
+                        </ComboBox>
                     </StackPanel>
-                    <StackPanel HorizontalAlignment="Right">
-                        <TextBlock Text="Additional Parameters:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
-                        <ListBox Margin="0,0,0,32">
-                            <ListBoxItem Content="No limitations"/>
-                            <ListBoxItem Content="ASCII 0x20..0x7f"/>
-                            <ListBoxItem Content="Only a-z"/>
-                            <ListBoxItem Content="Only A-Z"/>
-                            <ListBoxItem Content="Only numbers (0-9)"/>
-                            <ListBoxItem Content="Only a-z and A-Z and 0-9"/>
-                        </ListBox>
+                <StackPanel  Margin="0,0,0,8"> 
+                        <TextBlock Text="Additional Parameters:"/>
+                        <ComboBox>
+                            <ComboBoxItem Content="No limitations"/>
+                            <ComboBoxItem Content="Only a-z"/>
+                            <ComboBoxItem Content="Only A-Z"/>
+                            <ComboBoxItem Content="Only numbers (0-9)"/>
+                            <ComboBoxItem Content="Only a-z and A-Z and 0-9"/>
+                        </ComboBox>
                     </StackPanel>
-                </Grid>
-                <StackPanel HorizontalAlignment="Left">
-                    <TextBlock Text="Number of CPU Cores:" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
-                    <ListBox x:Name="lboxCPU"  Margin="0,0,0,32"/>
+                <StackPanel  Margin="0,0,0,8">
+                    <TextBlock Text="Known key letters:"/>
+                    <TextBox Name="txtKey"/>
+                </StackPanel>
+                <StackPanel  Margin="0,0,0,8">
+                    <TextBox Name="txtProgress" Height="250" Width="350"/>
+                </StackPanel>
+                <StackPanel  Margin="0,0,0,8" HorizontalAlignment="Center">
+                    <Button Content="Start" Height="50" Width="120" Name="btnStartBruteForce" Click="btnStartBruteForce_Click"/>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

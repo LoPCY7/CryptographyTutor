@@ -9,8 +9,14 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Initial Permutation IP" Style="{StaticResource Heading1}" />
+				<TextBlock Text="first step of the data computation" />
+<TextBlock Text="IP reorders the input data bits" />
+<TextBlock Text="even bits to LH half, odd bits to RH half" />
+<TextBlock Text="quite regular in structure (easy in h/w)" />
+<TextBlock Text="example:" />
+<TextBlock Text="IP(675a6967 5e5a6b5a) = (ffb2194d 004df6fb)" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

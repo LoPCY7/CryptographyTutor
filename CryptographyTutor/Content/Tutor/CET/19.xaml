@@ -9,8 +9,19 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Example Cryptanalysis" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• given ciphertext:" />
+<TextBlock Text="UZQSOVUOHXMOPVGPOZPEVSGZWSZOPFPESXUDBMETSXAIZ" />
+<TextBlock Text="VUEPHZHMDZSHZOWSFPAPPDTSVPQUZWYMXUZUHSX" />
+<TextBlock Text="EPYEPOPDZSZUFPOMBZWPFUPZHMDJUDTMOHMQ" />
+<TextBlock Text="• count relative letter frequencies (see text)" />
+                <TextBlock Text="• guess P &amp;  Z are e and t" />
+<TextBlock Text="• guess ZW is th and hence ZWP is the" />
+<TextBlock Text="• proceeding with trial and error finally get:" />
+<TextBlock Text="it was disclosed yesterday that several informal but" />
+<TextBlock Text="direct contacts have been made with political" />
+<TextBlock Text="representatives of the Viet Cong in Moscow" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

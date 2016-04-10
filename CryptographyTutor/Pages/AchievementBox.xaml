@@ -9,7 +9,7 @@
     <StackPanel Height="100" Width="600">
         <TextBlock FontWeight="Bold" FontSize="24" Text="Name" Margin="0,0,0,16" Name="txtName"/>
         <Grid HorizontalAlignment="Center" Width="450">
-            <TextBlock FontSize="16" Text="Description" HorizontalAlignment="Left" Name="txtDescription"/>
+            <mui:BBCodeBlock FontSize="16" BBCode="[i]Description[/]" HorizontalAlignment="Left" Name="txtDescription"/>
             <TextBlock FontSize="16" Text="Score" HorizontalAlignment="Right" Name="txtScore"/>
         </Grid>
     </StackPanel>

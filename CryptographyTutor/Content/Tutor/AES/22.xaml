@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="AES Decryption" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• AES decryption is not identical to encryption" />
+<TextBlock Text="since steps done in reverse" />
+<TextBlock Text="• but can define an equivalent inverse cipher" />
+<TextBlock Text="with steps as for encryption" />
+<TextBlock Text="– but using inverses of each step" />
+<TextBlock Text="– with a different key schedule" />
+<TextBlock Text="• works since result is unchanged when" />
+<TextBlock Text="– swap byte substitution &amp; shift rows" />
+<TextBlock Text="– swap mix columns &amp; add (tweaked) round key" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

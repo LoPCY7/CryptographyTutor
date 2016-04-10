@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Basic Terminology" Style="{StaticResource Heading1}" />
+				<TextBlock Text="Plaintext: original message"/>
+<TextBlock Text="Ciphertext: coded message"/>
+<TextBlock Text="Cipher: algorithm for transforming plaintext to ciphertext"/>
+<TextBlock Text="Key: information (usually a string of characters) used in cipher, to encrypt plaintext, known only by the sender and the receiver"/>
+<TextBlock Text="Encipher (encrypt): the process of converting plaintext to ciphertext"/>
+<TextBlock Text="Decipher (decrypt): the process of recovering ciphertext from plaintext"/>
+<TextBlock Text="Cryptography: the study of encryption principles/methods"/>
+<TextBlock Text="Cryptanalysis (codebreaking): the study of principles/ methods of deciphering ciphertext without knowing key"/>
+<TextBlock Text="Cryptology: field of both cryptography and cryptanalysis"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

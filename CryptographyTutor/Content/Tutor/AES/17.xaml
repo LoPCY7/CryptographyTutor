@@ -9,7 +9,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="Introduction" Style="{StaticResource Heading1}" />
+                <TextBlock Text="AES Key Expansion" Style="{StaticResource Heading1}" />
+				<TextBlock Text="-takes 128-bit (16-byte) key and expands into" />
+<TextBlock Text="array of 44/52/60 32-bit words" />
+<TextBlock Text="-start by copying key into first 4 words" />
+<TextBlock Text="-then loop creating words that depend on" />
+<TextBlock Text="values in previous &amp; 4 places back" />
+<TextBlock Text="-in 3 of 4 cases just XOR these together" />
+<TextBlock Text="-1st word in 4 has rotate + S-box + XOR round" />
+<TextBlock Text="constant on previous, before XOR 4th back" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

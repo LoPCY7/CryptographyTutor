@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="DES Decryption" Style="{StaticResource Heading1}" />
+				<TextBlock Text="decrypt must unwind steps of data computation" />
+<TextBlock Text="• with Feistel design, do encryption steps again using" />
+<TextBlock Text="subkeys in reverse order (SK16 … SK1)" />
+<TextBlock Text="– IP undoes final FP step of encryption" />
+<TextBlock Text="– 1st round with SK16 undoes 16th encrypt round" />
+<TextBlock Text="– …." />
+<TextBlock Text="– 16th round with SK1 undoes 1st encrypt round" />
+<TextBlock Text="– then final FP undoes initial encryption IP" />
+<TextBlock Text="– thus recovering original data value" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

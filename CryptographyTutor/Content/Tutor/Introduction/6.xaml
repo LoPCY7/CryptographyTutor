@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Computer Security Challenges" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <TextBlock Text="•Not simple" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Must consider potential attacks" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Procedures used counter-intuitive" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Involve algorithms and secret info" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Must decide where to deploy mechanisms" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Battle of wits between attacker/admin" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Not perceived on benefit until fails" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Requires regular monitoring" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Too often an after-thought" TextWrapping="Wrap" FontSize="16"/>
+				<TextBlock Text="•Regarded as impediment to using system" TextWrapping="Wrap" FontSize="16"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

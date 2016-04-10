@@ -1,4 +1,6 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
+﻿using CryptographyTutor.Model;
+using FirstFloor.ModernUI.Presentation;
+using FirstFloor.ModernUI.Windows.Controls;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -29,15 +31,49 @@ namespace CryptographyTutor
         public WelcomePage()
         {
             InitializeComponent();
+            folderSavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\CryptographyTutor";
+            savePath = folderSavePath + "\\save.bin";
+            checkSave(savePath);
         }
 
-        private void createSave(string playerName)
+        private void checkSave(string sPath)
+        {
+            if (File.Exists(sPath) == true)
+            {
+                retrieveSave();
+                MainWindow mainWindow = new MainWindow();
+                this.Close();
+                mainWindow.Show();
+            }
+        }
+
+        private void retrieveSave()
+        {
+            SettingsModel newModel = new SettingsModel();
+            Color accentColour = (Color)ColorConverter.ConvertFromString(newModel.AccentColour);
+            AppearanceManager.Current.AccentColor = accentColour;
+            if (newModel.SelectedTheme == "Dark")
+                AppearanceManager.Current.ThemeSource = AppearanceManager.DarkThemeSource;
+            else
+                AppearanceManager.Current.ThemeSource = AppearanceManager.LightThemeSource;
+        }
+
+        public void createSave(string playerName)
         {
             Directory.CreateDirectory(folderSavePath);
             File.Create(savePath).Close();
             TextWriter tw = new StreamWriter(savePath);
             tw.WriteLine(playerName);
+            tw.WriteLine("0");
+            tw.WriteLine(AppearanceManager.Current.AccentColor.ToString());
+            if (AppearanceManager.Current.ThemeSource == AppearanceManager.DarkThemeSource)
+                tw.WriteLine("Dark");
+            else
+                tw.WriteLine("Light");
             tw.Close();
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
         }
     }
 }

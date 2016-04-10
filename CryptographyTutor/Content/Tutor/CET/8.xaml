@@ -9,8 +9,19 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Cryptanalytic Attacks" Style="{StaticResource Heading1}" />
+                <TextBlock Text="ciphertext only"/>
+<TextBlock Text="only know algorithm &amp; ciphertext, is statistical,"/>
+<TextBlock Text="know or can identify plaintext"/>
+<TextBlock Text="known plaintext"/>
+<TextBlock Text="know/suspect plaintext &amp; ciphertext"/>
+<TextBlock Text="chosen plaintext"/>
+<TextBlock Text="select plaintext and obtain ciphertext"/>
+<TextBlock Text="chosen ciphertext"/>
+<TextBlock Text="select ciphertext and obtain plaintext"/>
+<TextBlock Text="chosen text"/>
+<TextBlock Text="select plaintext or ciphertext to en/decrypt"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

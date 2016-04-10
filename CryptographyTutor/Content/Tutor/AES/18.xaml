@@ -9,8 +9,17 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Key Expansion Rationale" Style="{StaticResource Heading1}" />
+				<TextBlock Text="• designed to resist known attacks" />
+<TextBlock Text="• design criteria included" />
+<TextBlock Text="– knowing part key insufficient to find many more" />
+<TextBlock Text="– invertible transformation" />
+<TextBlock Text="– fast on wide range of CPU’s" />
+<TextBlock Text="– use round constants to break symmetry" />
+<TextBlock Text="– diffuse key bits into round keys" />
+<TextBlock Text="– enough non-linearity to hinder analysis" />
+<TextBlock Text="– simplicity of description" />
+
             </StackPanel>
         </ScrollViewer>
     </Grid>

@@ -9,8 +9,11 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
-                <TextBlock Text="Content goes here" />
+                <TextBlock Text="Security Mechanism" Style="{StaticResource Heading1}" />
+				<TextBlock Text="Security Mechanisms are features designed to detect, prevent, or recover the system from a security attack"/>
+<TextBlock Text="There is no single mechanism that will support everything"/>
+<TextBlock Text="Security Services are required"/>
+<TextBlock Text="Many of the security mechanisms use cryptographic techniques"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

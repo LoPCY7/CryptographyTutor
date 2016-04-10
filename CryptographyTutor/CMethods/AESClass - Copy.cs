@@ -31,6 +31,8 @@ namespace CryptographyTutor.CMethods
         private byte[,] Rcon;
         // State matrix
         private byte[,] State;
+		//Initial Vector used for CBC mode
+		private byte[] IV;
 
         public AESClass(KeySize keySize, byte[] keyBytes)
         {

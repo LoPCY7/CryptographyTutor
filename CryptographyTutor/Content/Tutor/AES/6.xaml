@@ -9,8 +9,14 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="BASIC PAGE" Style="{StaticResource Heading2}" />
+                <TextBlock Text="AES Structure" Style="{StaticResource Heading2}" />
                 <TextBlock Text="Content goes here" />
+				<TextBlock Text="Key is expanded to array of words" />
+				<TextBlock Text="It has 9/11/13 rounds (depending on the key size). Each state undergoes by:" />
+				<TextBlock Text="-byte substitution using SBox" />
+				<TextBlock Text="-shift rows" />
+				<TextBlock Text="-mix columns" />
+				<TextBlock Text="-add round key" />
             </StackPanel>
         </ScrollViewer>
     </Grid>
